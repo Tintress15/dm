@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="yfo-kx-DGp">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="bXx-9x-COG">
             <objects>
-                <viewController id="yfo-kx-DGp" sceneMemberID="viewController">
+                <viewController id="yfo-kx-DGp" customClass="LoginViewController" customModule="dm" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UAF-SB-Vak"/>
                         <viewControllerLayoutGuide type="bottom" id="OBq-NL-CSI"/>
@@ -18,7 +18,49 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3xy-Gi-EHa">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pew-n5-vaB">
+                                        <rect key="frame" x="38" y="41" width="244" height="91"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Username" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6gF-AD-lib">
+                                                <rect key="frame" x="20" y="11" width="204" height="30"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="204" id="6OV-Zp-FFg"/>
+                                                    <constraint firstAttribute="height" constant="30" id="ns8-PU-tcb"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Password" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nge-Ch-gvb">
+                                                <rect key="frame" x="20" y="49" width="204" height="30"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="66q-SI-fp4"/>
+                                                    <constraint firstAttribute="width" constant="204" id="GtS-s1-vy0"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Nge-Ch-gvb" secondAttribute="trailing" constant="20" id="EWy-39-bpK"/>
+                                            <constraint firstItem="Nge-Ch-gvb" firstAttribute="top" secondItem="6gF-AD-lib" secondAttribute="bottom" constant="8" id="Ryq-Sk-cYU"/>
+                                            <constraint firstAttribute="centerY" secondItem="Nge-Ch-gvb" secondAttribute="centerY" constant="-18.5" id="VaP-6a-82O"/>
+                                            <constraint firstItem="6gF-AD-lib" firstAttribute="top" secondItem="pew-n5-vaB" secondAttribute="top" constant="11" id="Vi2-Ce-A0V"/>
+                                            <constraint firstItem="6gF-AD-lib" firstAttribute="leading" secondItem="pew-n5-vaB" secondAttribute="leading" constant="20" id="jtj-aU-W4b"/>
+                                            <constraint firstAttribute="bottom" secondItem="Nge-Ch-gvb" secondAttribute="bottom" constant="12" id="ngU-lV-VUb"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" red="0.83970565029999999" green="0.83970565029999999" blue="0.83970565029999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="pew-n5-vaB" firstAttribute="centerX" secondItem="3xy-Gi-EHa" secondAttribute="centerX" id="ByS-qK-R4t"/>
+                                    <constraint firstItem="pew-n5-vaB" firstAttribute="leading" secondItem="3xy-Gi-EHa" secondAttribute="leading" constant="38" id="ZhE-JG-0D9"/>
+                                    <constraint firstAttribute="centerY" secondItem="pew-n5-vaB" secondAttribute="centerY" constant="197.5" id="dFQ-Kl-629"/>
+                                    <constraint firstItem="pew-n5-vaB" firstAttribute="top" secondItem="3xy-Gi-EHa" secondAttribute="top" constant="41" id="qOX-cc-11R"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -32,7 +74,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R6m-Gz-fja" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="166.93333333333334" y="354.05333333333334"/>
+            <point key="canvasLocation" x="166" y="187"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
