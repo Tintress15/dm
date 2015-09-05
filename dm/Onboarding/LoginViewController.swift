@@ -10,10 +10,22 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    //MARK: - IBOutlets
+    @IBOutlet weak var username    : UITextField!
+    @IBOutlet weak var password    : UITextField!
+    @IBOutlet weak var loginButton : DMButton!
+    
+    
+    //MARK: - IBActions
+    @IBAction func loginButtonPressed(sender: AnyObject) {
+        
+    }
+    
+    //MARK: - Internal methods
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        username.becomeFirstResponder()
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,9 +34,10 @@ class LoginViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
 
+    //MARK: - Navigation
+
+    /*
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
