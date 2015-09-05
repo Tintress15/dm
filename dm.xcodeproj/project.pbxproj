@@ -13,6 +13,7 @@
 		E5BB68C01B9B56FC00327253 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5BB68BF1B9B56FC00327253 /* Images.xcassets */; };
 		E5BB68C31B9B56FC00327253 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5BB68C11B9B56FC00327253 /* LaunchScreen.xib */; };
 		E5BB68CF1B9B56FC00327253 /* dmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BB68CE1B9B56FC00327253 /* dmTests.swift */; };
+		E5BB68DE1B9B594000327253 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5BB68DD1B9B594000327253 /* Onboarding.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		E5BB68C81B9B56FC00327253 /* dmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5BB68CD1B9B56FC00327253 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5BB68CE1B9B56FC00327253 /* dmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dmTests.swift; sourceTree = "<group>"; };
+		E5BB68DD1B9B594000327253 /* Onboarding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Onboarding.storyboard; path = Onboarding/Onboarding.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,8 @@
 			isa = PBXGroup;
 			children = (
 				E5BB68B51B9B56FC00327253 /* dm */,
+				E5BB68DA1B9B57D500327253 /* Utils */,
+				E5BB68DB1B9B57F900327253 /* Frameworks */,
 				E5BB68CB1B9B56FC00327253 /* dmTests */,
 				E5BB68B41B9B56FC00327253 /* Products */,
 			);
@@ -77,12 +81,15 @@
 		E5BB68B51B9B56FC00327253 /* dm */ = {
 			isa = PBXGroup;
 			children = (
+				E5BB68D81B9B57BC00327253 /* Stores */,
+				E5BB68D91B9B57C900327253 /* Models */,
 				E5BB68B81B9B56FC00327253 /* AppDelegate.swift */,
 				E5BB68BA1B9B56FC00327253 /* ViewController.swift */,
 				E5BB68BC1B9B56FC00327253 /* Main.storyboard */,
+				E5BB68DC1B9B584300327253 /* Onboarding */,
+				E5BB68B61B9B56FC00327253 /* Supporting Files */,
 				E5BB68BF1B9B56FC00327253 /* Images.xcassets */,
 				E5BB68C11B9B56FC00327253 /* LaunchScreen.xib */,
-				E5BB68B61B9B56FC00327253 /* Supporting Files */,
 			);
 			path = dm;
 			sourceTree = "<group>";
@@ -110,6 +117,44 @@
 				E5BB68CD1B9B56FC00327253 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E5BB68D81B9B57BC00327253 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Stores;
+			sourceTree = "<group>";
+		};
+		E5BB68D91B9B57C900327253 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		E5BB68DA1B9B57D500327253 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utils;
+			path = dm;
+			sourceTree = "<group>";
+		};
+		E5BB68DB1B9B57F900327253 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			path = dm;
+			sourceTree = "<group>";
+		};
+		E5BB68DC1B9B584300327253 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				E5BB68DD1B9B594000327253 /* Onboarding.storyboard */,
+			);
+			name = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +240,7 @@
 				E5BB68BE1B9B56FC00327253 /* Main.storyboard in Resources */,
 				E5BB68C31B9B56FC00327253 /* LaunchScreen.xib in Resources */,
 				E5BB68C01B9B56FC00327253 /* Images.xcassets in Resources */,
+				E5BB68DE1B9B594000327253 /* Onboarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
