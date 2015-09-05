@@ -39,7 +39,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.83970565029999999" green="0.83970565029999999" blue="0.83970565029999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="Nge-Ch-gvb" firstAttribute="top" secondItem="6gF-AD-lib" secondAttribute="bottom" constant="8" symbolic="YES" id="7Gh-0R-D7I"/>
                                             <constraint firstAttribute="width" constant="244" id="Enm-Gj-eAZ"/>
@@ -50,6 +50,17 @@
                                             <constraint firstAttribute="height" constant="91" id="vw0-J2-0tZ"/>
                                         </constraints>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Czg-BH-cHK" customClass="DMButton" customModule="dm" customModuleProvider="target">
+                                        <rect key="frame" x="58" y="132" width="204" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loginButtonPressed:" destination="yfo-kx-DGp" eventType="touchUpInside" id="Tov-lP-AqA"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.83970565029999999" green="0.83970565029999999" blue="0.83970565029999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -68,6 +79,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="LuZ-Pm-xjy"/>
+                    <connections>
+                        <outlet property="loginButton" destination="Czg-BH-cHK" id="8HG-US-KMl"/>
+                        <outlet property="username" destination="6gF-AD-lib" id="iJr-c7-qrj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R6m-Gz-fja" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

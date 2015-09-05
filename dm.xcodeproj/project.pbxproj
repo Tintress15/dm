@@ -16,6 +16,7 @@
 		E5BB68DE1B9B594000327253 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5BB68DD1B9B594000327253 /* Onboarding.storyboard */; };
 		E5BB68E01B9B5FA700327253 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BB68DF1B9B5FA700327253 /* LoginViewController.swift */; };
 		E5BB68E31B9B6A8200327253 /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BB68E21B9B6A8200327253 /* Navigation.swift */; };
+		E5BB68E51B9B762900327253 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BB68E41B9B762900327253 /* Defaults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		E5BB68DD1B9B594000327253 /* Onboarding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Onboarding.storyboard; path = Onboarding/Onboarding.storyboard; sourceTree = "<group>"; };
 		E5BB68DF1B9B5FA700327253 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Onboarding/LoginViewController.swift; sourceTree = "<group>"; };
 		E5BB68E21B9B6A8200327253 /* Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Navigation.swift; path = Util/Navigation.swift; sourceTree = "<group>"; };
+		E5BB68E41B9B762900327253 /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Defaults.swift; path = Util/Defaults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				E5BB68E21B9B6A8200327253 /* Navigation.swift */,
+				E5BB68E41B9B762900327253 /* Defaults.swift */,
 			);
 			name = Utils;
 			path = dm;
@@ -266,6 +269,7 @@
 			files = (
 				E5BB68E01B9B5FA700327253 /* LoginViewController.swift in Sources */,
 				E5BB68BB1B9B56FC00327253 /* ViewController.swift in Sources */,
+				E5BB68E51B9B762900327253 /* Defaults.swift in Sources */,
 				E5BB68B91B9B56FC00327253 /* AppDelegate.swift in Sources */,
 				E5BB68E31B9B6A8200327253 /* Navigation.swift in Sources */,
 			);
