@@ -13,7 +13,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+       println("I am in LoginViewController:viewDidLoad")
     }
 
     override func didReceiveMemoryWarning() {

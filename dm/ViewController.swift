@@ -12,14 +12,16 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        println("I am in ViewController:viewDidLoad")
+        
+        self.performExoSegueWithIdentifier("Onboarding", viewController: "LoginViewController")
+        
+        //self.performExoSegueWithIdentifier(<#storyboard: String#>, viewController: <#String#>)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
-
 }
 
