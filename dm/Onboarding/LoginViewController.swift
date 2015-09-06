@@ -7,13 +7,22 @@
 //
 
 import UIKit
+import SnapKit
 
 class LoginViewController: UIViewController {
 
     //MARK: - IBOutlets
-    @IBOutlet weak var username    : UITextField!
-    @IBOutlet weak var password    : UITextField!
-    @IBOutlet weak var loginButton : DMButton!
+    @IBOutlet weak var username       : UITextField!
+    @IBOutlet weak var password       : UITextField!
+    @IBOutlet weak var loginButton    : DMButton!
+    @IBOutlet weak var forgotPassword : DMButton!
+    @IBOutlet weak var register       : DMButton!
+    
+    
+    //MARK: - Methods
+    func setConstraints() {
+
+    }
     
     
     //MARK: - IBActions
@@ -25,6 +34,8 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setConstraints()
+        
         username.becomeFirstResponder()
     }
 

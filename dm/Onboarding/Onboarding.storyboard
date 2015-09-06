@@ -43,6 +43,7 @@
                                         <constraints>
                                             <constraint firstItem="Nge-Ch-gvb" firstAttribute="top" secondItem="6gF-AD-lib" secondAttribute="bottom" constant="8" symbolic="YES" id="7Gh-0R-D7I"/>
                                             <constraint firstAttribute="width" constant="244" id="Enm-Gj-eAZ"/>
+                                            <constraint firstItem="Nge-Ch-gvb" firstAttribute="leading" secondItem="6gF-AD-lib" secondAttribute="leading" id="ISo-tt-nAi"/>
                                             <constraint firstItem="6gF-AD-lib" firstAttribute="top" secondItem="pew-n5-vaB" secondAttribute="top" constant="11" id="OGf-Om-hy3"/>
                                             <constraint firstItem="6gF-AD-lib" firstAttribute="leading" secondItem="Nge-Ch-gvb" secondAttribute="leading" id="ffA-AI-7WU"/>
                                             <constraint firstItem="6gF-AD-lib" firstAttribute="trailing" secondItem="Nge-Ch-gvb" secondAttribute="trailing" id="n1e-TX-nEZ"/>
@@ -50,23 +51,54 @@
                                             <constraint firstAttribute="height" constant="91" id="vw0-J2-0tZ"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Czg-BH-cHK" customClass="DMButton" customModule="dm" customModuleProvider="target">
-                                        <rect key="frame" x="58" y="132" width="204" height="28"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Czg-BH-cHK" customClass="DMButton" customModule="dm" customModuleProvider="target">
+                                        <rect key="frame" x="58" y="128" width="204" height="28"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="204" id="347-i5-lfK"/>
+                                            <constraint firstAttribute="height" constant="28" id="3aj-TG-0LX"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
-                                        <state key="normal" title="Login">
-                                            <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
+                                        <state key="normal" title="Login"/>
                                         <connections>
                                             <action selector="loginButtonPressed:" destination="yfo-kx-DGp" eventType="touchUpInside" id="Tov-lP-AqA"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9pt-ny-btq" customClass="DMButton" customModule="dm" customModuleProvider="target">
+                                        <rect key="frame" x="213" y="177" width="99" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="99" id="4hQ-xJ-x7l"/>
+                                            <constraint firstAttribute="height" constant="30" id="9qj-gT-1EJ"/>
+                                        </constraints>
+                                        <state key="normal" title="Button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpd-GQ-79y" customClass="DMButton" customModule="dm" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="177" width="99" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="99" id="cMm-FY-3zO"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="99" id="eE6-oy-inR"/>
+                                            <constraint firstAttribute="height" constant="30" id="iQE-2N-9TG"/>
+                                        </constraints>
+                                        <state key="normal" title="Button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.83970565029999999" green="0.83970565029999999" blue="0.83970565029999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="cpd-GQ-79y" firstAttribute="baseline" secondItem="9pt-ny-btq" secondAttribute="baseline" id="De8-XB-BBv"/>
+                                    <constraint firstItem="cpd-GQ-79y" firstAttribute="leading" secondItem="3xy-Gi-EHa" secondAttribute="leading" constant="8" id="GYf-Ge-6nF"/>
                                     <constraint firstItem="pew-n5-vaB" firstAttribute="top" secondItem="3xy-Gi-EHa" secondAttribute="top" constant="41" id="HpG-Q5-Zm5"/>
+                                    <constraint firstItem="cpd-GQ-79y" firstAttribute="top" secondItem="Czg-BH-cHK" secondAttribute="bottom" constant="21" id="KOP-sE-SGm"/>
                                     <constraint firstItem="pew-n5-vaB" firstAttribute="leading" secondItem="3xy-Gi-EHa" secondAttribute="leading" constant="38" id="MDT-v6-beB"/>
+                                    <constraint firstAttribute="trailing" secondItem="9pt-ny-btq" secondAttribute="trailing" constant="8" id="WP7-Mg-cLy"/>
                                     <constraint firstAttribute="trailing" secondItem="pew-n5-vaB" secondAttribute="trailing" constant="38" id="Yy0-w5-1A0"/>
+                                    <constraint firstItem="Nge-Ch-gvb" firstAttribute="leading" secondItem="Czg-BH-cHK" secondAttribute="leading" id="fkC-oB-sAg"/>
+                                    <constraint firstItem="cpd-GQ-79y" firstAttribute="top" secondItem="3xy-Gi-EHa" secondAttribute="top" constant="177" id="p0b-Zv-dMB"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -80,13 +112,32 @@
                     </view>
                     <navigationItem key="navigationItem" id="LuZ-Pm-xjy"/>
                     <connections>
+                        <outlet property="forgotPassword" destination="cpd-GQ-79y" id="xCb-hb-bQU"/>
                         <outlet property="loginButton" destination="Czg-BH-cHK" id="8HG-US-KMl"/>
+                        <outlet property="register" destination="9pt-ny-btq" id="Lxy-H2-HMi"/>
                         <outlet property="username" destination="6gF-AD-lib" id="iJr-c7-qrj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R6m-Gz-fja" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="698" y="187"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="EPe-Im-gFc">
+            <objects>
+                <viewController id="Qgt-fO-264" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="svs-DV-bTt"/>
+                        <viewControllerLayoutGuide type="bottom" id="zYx-8T-9aW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LLc-Cw-15v">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tPI-dv-f3h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

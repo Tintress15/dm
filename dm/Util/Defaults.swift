@@ -15,8 +15,10 @@ class DMButton : UIButton {
         self.layer.cornerRadius = 5.0;
         self.layer.borderWidth  = 0.5
         self.layer.borderColor  = UIColor.blackColor().CGColor
-        self.backgroundColor    = UIColor.whiteColor()
-        self.tintColor          = UIColor.whiteColor()
+        
+        self.titleLabel?.textColor = UIColor.redColor()
+        self.backgroundColor       = UIColor.whiteColor()
+        self.tintColor             = UIColor.whiteColor()
         
     }
 }
