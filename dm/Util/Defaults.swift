@@ -18,7 +18,6 @@ class DMButton : UIButton {
         self.layer.cornerRadius    = 12.0;
         self.layer.borderWidth     = 0.5
         self.layer.borderColor     = UIColor.blackColor().CGColor
-        
         self.titleLabel?.textColor = UIColor.blackColor()
         self.backgroundColor       = dmGreen
         self.tintColor             = UIColor.whiteColor()
@@ -32,11 +31,9 @@ class DMTextField : UITextField {
         self.layer.cornerRadius    = 12.0;
         self.layer.borderWidth     = 0.5
         self.layer.borderColor     = dmGreen.CGColor
-
-        
-        self.textColor        = UIColor.whiteColor()
-        self.backgroundColor  = dmGreen
-        self.tintColor        = UIColor.whiteColor()
+        self.textColor             = UIColor.whiteColor()
+        self.backgroundColor       = dmGreen
+        self.tintColor             = UIColor.whiteColor()
         
     }
 }
