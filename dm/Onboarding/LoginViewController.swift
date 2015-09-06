@@ -27,7 +27,7 @@ class LoginViewController: UIViewController {
     
     //MARK: - IBActions
     @IBAction func loginButtonPressed(sender: AnyObject) {
-        
+        performExoSegueWithIdentifier("Dashboard", viewController: "DashboardIdentifier")
     }
     
     //MARK: - Internal methods
