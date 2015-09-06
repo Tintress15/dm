@@ -7,9 +7,30 @@
 //
 
 import UIKit
+import LiquidFloatingActionButton
 
-class DashboardViewController: UIViewController {
+class DashboardViewController: UIViewController, LiquidFloatingActionButtonDataSource, LiquidFloatingActionButtonDelegate {
 
+    var cells: [LiquidFloatingCell] = []
+    var floatingActionButton: LiquidFloatingActionButton!
+    
+    
+    //MARK: LiquidFloating methods
+    func numberOfCells(liquidFloatingActionButton: LiquidFloatingActionButton) -> Int {
+        return cells.count
+    }
+    
+    func cellForIndex(index: Int) -> LiquidFloatingCell {
+        return cells[index]
+    }
+    
+    func liquidFloatingActionButton(liquidFloatingActionButton: LiquidFloatingActionButton, didSelectItemAtIndex index: Int) {
+        println("did Tapped! \(index)")
+        floatingActionButton.close()
+    }
+    
+    
+    //MARK: - Internal methods
     override func viewDidLoad() {
         super.viewDidLoad()
 
