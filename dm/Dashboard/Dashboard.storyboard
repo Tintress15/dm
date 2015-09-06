@@ -20,10 +20,10 @@
             </objects>
             <point key="canvasLocation" x="413.33333333333331" y="288.73333333333335"/>
         </scene>
-        <!--View Controller-->
+        <!--Dashboard View Controller-->
         <scene sceneID="bZd-4g-nz4">
             <objects>
-                <viewController id="6h5-bj-Zer" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DashboardIdentifier" id="6h5-bj-Zer" customClass="DashboardViewController" customModule="dm" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="g3k-Tr-6j9"/>
                         <viewControllerLayoutGuide type="bottom" id="dQm-Oe-DKY"/>
@@ -34,6 +34,16 @@
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LMy-Ju-mmL">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FX0-xS-Slg">
+                                        <rect key="frame" x="228" y="473" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" red="0.83970565029999999" green="0.83970565029999999" blue="0.83970565029999999" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>

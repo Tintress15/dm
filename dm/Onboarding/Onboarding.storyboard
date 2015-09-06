@@ -32,17 +32,13 @@
                                             <action selector="loginButtonPressed:" destination="yfo-kx-DGp" eventType="touchUpInside" id="Tov-lP-AqA"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9pt-ny-btq" customClass="DMButton" customModule="dm" customModuleProvider="target">
-                                        <rect key="frame" x="111" y="288" width="99" height="30"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="15"/>
-                                        <state key="normal" title="Sign up">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpd-GQ-79y" customClass="DMButton" customModule="dm" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpd-GQ-79y" customClass="DMButton" customModule="dm" customModuleProvider="target">
                                         <rect key="frame" x="111" y="335" width="99" height="30"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="VS9-cP-nNm"/>
+                                            <constraint firstAttribute="width" constant="99" id="YdY-DB-tTx"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="15"/>
                                         <state key="normal" title="Forgot">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -78,21 +74,39 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="6gF-AD-lib" firstAttribute="width" secondItem="Nge-Ch-gvb" secondAttribute="width" id="al9-Q1-zej"/>
                                             <constraint firstAttribute="height" constant="77" id="mVN-gD-fiv"/>
                                             <constraint firstItem="Nge-Ch-gvb" firstAttribute="top" secondItem="6gF-AD-lib" secondAttribute="bottom" constant="7" id="srT-fh-9EF"/>
                                         </constraints>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9pt-ny-btq" customClass="DMButton" customModule="dm" customModuleProvider="target">
+                                        <rect key="frame" x="111" y="290" width="99" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="32s-Yp-IuC"/>
+                                            <constraint firstAttribute="width" constant="99" id="ucY-Jb-BWa"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="15"/>
+                                        <state key="normal" title="Sign up">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="9pt-ny-btq" firstAttribute="leading" secondItem="3xy-Gi-EHa" secondAttribute="leading" constant="111" id="0Gj-JB-bp1"/>
+                                    <constraint firstItem="cpd-GQ-79y" firstAttribute="leading" secondItem="3xy-Gi-EHa" secondAttribute="leading" constant="111" id="FPq-jm-dwB"/>
+                                    <constraint firstAttribute="trailing" secondItem="9pt-ny-btq" secondAttribute="trailing" constant="110" id="Hp1-vZ-Wtm"/>
+                                    <constraint firstItem="9pt-ny-btq" firstAttribute="top" secondItem="1ad-EZ-Ji1" secondAttribute="bottom" constant="31" id="IDo-vi-ODQ"/>
+                                    <constraint firstItem="cpd-GQ-79y" firstAttribute="top" secondItem="9pt-ny-btq" secondAttribute="bottom" constant="15" id="LOY-Im-8bS"/>
                                     <constraint firstItem="pew-n5-vaB" firstAttribute="leading" secondItem="3xy-Gi-EHa" secondAttribute="leading" constant="51" id="Tvl-9P-xaq"/>
                                     <constraint firstAttribute="trailing" secondItem="pew-n5-vaB" secondAttribute="trailing" constant="51" id="XA4-PV-qgX"/>
                                     <constraint firstAttribute="trailing" secondItem="Czg-BH-cHK" secondAttribute="trailing" constant="58" id="aFi-Nc-CRQ"/>
                                     <constraint firstItem="Czg-BH-cHK" firstAttribute="width" secondItem="Nge-Ch-gvb" secondAttribute="width" id="e7l-lI-GH0"/>
                                     <constraint firstItem="pew-n5-vaB" firstAttribute="top" secondItem="3xy-Gi-EHa" secondAttribute="top" constant="45" id="mLf-nx-1Ze"/>
+                                    <constraint firstAttribute="trailing" secondItem="cpd-GQ-79y" secondAttribute="trailing" constant="110" id="uNB-0V-EM4"/>
                                     <constraint firstItem="1ad-EZ-Ji1" firstAttribute="width" secondItem="3xy-Gi-EHa" secondAttribute="width" id="v0W-Ff-w6l"/>
                                     <constraint firstItem="Czg-BH-cHK" firstAttribute="leading" secondItem="3xy-Gi-EHa" secondAttribute="leading" constant="58" id="v3m-Jj-u7B"/>
                                     <constraint firstItem="1ad-EZ-Ji1" firstAttribute="top" secondItem="Czg-BH-cHK" secondAttribute="bottom" constant="29" id="znk-cC-PaD"/>
