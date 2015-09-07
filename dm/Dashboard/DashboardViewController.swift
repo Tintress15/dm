@@ -58,11 +58,11 @@ class DashboardViewController: UIViewController, LiquidFloatingActionButtonDataS
             return LiquidFloatingCell(icon: UIImage(named: iconName)!)
         }
         
-        cells.append(cellFactory("ic_cloud"))
-        cells.append(cellFactory("ic_system"))
-        cells.append(cellFactory("ic_place"))
-        cells.append(cellFactory("ic_brush"))
-        //cells.append(cellFactory("ic_art"))
+        cells.append(cellFactory("ic_settings"))
+        cells.append(cellFactory("ic_graph"))
+        cells.append(cellFactory("ic_data"))
+        cells.append(cellFactory("ic_message"))
+        cells.append(cellFactory("ic_more"))
         
         let floatingFrame = CGRect(x: self.view.frame.width - 56 - 16, y: self.view.frame.height - 56 - 16, width: 56, height: 56)
         let bottomRightButton = createButton(floatingFrame, .Up)
