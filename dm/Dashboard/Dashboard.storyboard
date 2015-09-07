@@ -20,10 +20,10 @@
             </objects>
             <point key="canvasLocation" x="413.33333333333331" y="288.73333333333335"/>
         </scene>
-        <!--View Controller-->
+        <!--Dashboard View Controller-->
         <scene sceneID="bZd-4g-nz4">
             <objects>
-                <viewController id="6h5-bj-Zer" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DashboardIdentifier" id="6h5-bj-Zer" customClass="DashboardViewController" customModule="dm" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="g3k-Tr-6j9"/>
                         <viewControllerLayoutGuide type="bottom" id="dQm-Oe-DKY"/>
@@ -32,12 +32,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LMy-Ju-mmL">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LMy-Ju-mmL">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" red="0.83970565029999999" green="0.83970565029999999" blue="0.83970565029999999" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="LMy-Ju-mmL" secondAttribute="trailing" id="4ly-8t-KoB"/>
+                            <constraint firstItem="LMy-Ju-mmL" firstAttribute="top" secondItem="cJf-O0-I9V" secondAttribute="top" id="5wL-pV-N98"/>
+                            <constraint firstAttribute="bottom" secondItem="LMy-Ju-mmL" secondAttribute="bottom" id="8Vu-zJ-NeW"/>
+                            <constraint firstItem="LMy-Ju-mmL" firstAttribute="leading" secondItem="cJf-O0-I9V" secondAttribute="leading" id="P8j-oL-WmA"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="PwB-05-dJJ"/>
                 </viewController>
