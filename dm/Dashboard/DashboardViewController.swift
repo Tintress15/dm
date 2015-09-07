@@ -33,8 +33,7 @@ class DashboardViewController: UIViewController, LiquidFloatingActionButtonDataS
     //MARK: - Internal methods
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        /*
+        
         let createButton: (CGRect, LiquidFloatingActionButtonAnimateStyle) -> LiquidFloatingActionButton = { (frame, style) in
             let floatingActionButton = LiquidFloatingActionButton(frame: frame)
             floatingActionButton.animateStyle = style
@@ -43,12 +42,16 @@ class DashboardViewController: UIViewController, LiquidFloatingActionButtonDataS
             return floatingActionButton
         }
         
+        
         let cellFactory: (String) -> LiquidFloatingCell = { (iconName) in
             return LiquidFloatingCell(icon: UIImage(named: iconName)!)
         }
+        
         cells.append(cellFactory("ic_cloud"))
         cells.append(cellFactory("ic_system"))
         cells.append(cellFactory("ic_place"))
+        cells.append(cellFactory("ic_brush"))
+        cells.append(cellFactory("ic_art"))
         
         let floatingFrame = CGRect(x: self.view.frame.width - 56 - 16, y: self.view.frame.height - 56 - 16, width: 56, height: 56)
         let bottomRightButton = createButton(floatingFrame, .Up)
@@ -58,7 +61,7 @@ class DashboardViewController: UIViewController, LiquidFloatingActionButtonDataS
         
         self.view.addSubview(bottomRightButton)
         self.view.addSubview(topLeftButton)
-        */
+        
     }
 
     override func didReceiveMemoryWarning() {
