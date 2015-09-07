@@ -26,7 +26,19 @@ class DashboardViewController: UIViewController, LiquidFloatingActionButtonDataS
     
     func liquidFloatingActionButton(liquidFloatingActionButton: LiquidFloatingActionButton, didSelectItemAtIndex index: Int) {
         println("did Tapped! \(index)")
-        floatingActionButton.close()
+        
+        if let _ = floatingActionButton {
+           floatingActionButton.close()
+        } else {
+            switch index {
+            case 0: println(" \(index) pressed")
+            case 1: println(" \(index) pressed")
+            case 2: println(" \(index) pressed")
+            case 3: println(" \(index) pressed")
+            case 4: println(" \(index) pressed")
+            default: println("out of scope")
+            }
+        }
     }
     
     
