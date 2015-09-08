@@ -30,11 +30,11 @@ class DashboardViewController: UIViewController, LiquidFloatingActionButtonDataS
            floatingActionButton.close()
         } else {
             switch index {
-            case 0: println(" \(index) pressed")
-            case 1: println(" \(index) pressed")
-            case 2: println(" \(index) pressed")
-            case 3: println(" \(index) pressed")
-            case 4: println(" \(index) pressed")
+            case 0: println("Settings segue")
+            case 1: println("Graphs segue")
+            case 2: println("Data segue")
+            case 3: println("Messages segue")
+            case 4: println("More segue")
             default: println("out of scope")
             }
         }
