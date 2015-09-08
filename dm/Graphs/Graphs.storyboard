@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="lT7-O1-Vgr">
+            <objects>
+                <navigationController id="2wx-kR-tzv" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4Yd-yA-J6r">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="RGK-Wx-WaM" kind="relationship" relationship="rootViewController" id="axl-hB-9Em"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ebE-1p-jBW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-958" y="-2"/>
+        </scene>
+        <!--Graphs View Controller-->
+        <scene sceneID="Tby-Ew-bF9">
+            <objects>
+                <viewController storyboardIdentifier="GraphsIndentifier" id="RGK-Wx-WaM" customClass="GraphsViewController" customModule="dm" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AW5-LP-84r"/>
+                        <viewControllerLayoutGuide type="bottom" id="uFW-PU-NiQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6Az-pv-Noy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am graphs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ok6-aI-380">
+                                <rect key="frame" x="79" y="165" width="162" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="ok6-aI-380" secondAttribute="centerY" constant="108.5" id="4xa-9K-bOw"/>
+                            <constraint firstAttribute="centerX" secondItem="ok6-aI-380" secondAttribute="centerX" id="HgY-Lw-XfS"/>
+                            <constraint firstItem="ok6-aI-380" firstAttribute="top" secondItem="AW5-LP-84r" secondAttribute="bottom" constant="101" id="RIj-mG-Aof"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ok6-aI-380" secondAttribute="trailing" constant="63" id="Xrl-WG-WzD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4dV-W3-znl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="818-Jt-eO0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-540" y="-4"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

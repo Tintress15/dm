@@ -53,6 +53,8 @@
 		E5EFDB051B9E4E0600718BDB /* 153464-84.png in Resources */ = {isa = PBXBuildFile; fileRef = E5EFDB041B9E4E0600718BDB /* 153464-84.png */; };
 		E5EFDB071B9E4EFC00718BDB /* 121177-84.png in Resources */ = {isa = PBXBuildFile; fileRef = E5EFDB061B9E4EFC00718BDB /* 121177-84.png */; };
 		E5EFDB091B9E510900718BDB /* 192866-84.png in Resources */ = {isa = PBXBuildFile; fileRef = E5EFDB081B9E510900718BDB /* 192866-84.png */; };
+		E5EFDB0C1B9E83BF00718BDB /* Graphs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5EFDB0B1B9E83BF00718BDB /* Graphs.storyboard */; };
+		E5EFDB0E1B9E858E00718BDB /* GraphsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EFDB0D1B9E858E00718BDB /* GraphsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +120,8 @@
 		E5EFDB041B9E4E0600718BDB /* 153464-84.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "153464-84.png"; sourceTree = "<group>"; };
 		E5EFDB061B9E4EFC00718BDB /* 121177-84.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "121177-84.png"; sourceTree = "<group>"; };
 		E5EFDB081B9E510900718BDB /* 192866-84.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "192866-84.png"; sourceTree = "<group>"; };
+		E5EFDB0B1B9E83BF00718BDB /* Graphs.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Graphs.storyboard; path = Graphs/Graphs.storyboard; sourceTree = "<group>"; };
+		E5EFDB0D1B9E858E00718BDB /* GraphsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GraphsViewController.swift; path = Graphs/GraphsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +181,8 @@
 				E5BB68BC1B9B56FC00327253 /* Main.storyboard */,
 				E5BB68DC1B9B584300327253 /* Onboarding */,
 				E5BB68E71B9BD60F00327253 /* Dashboard */,
+				E5EFDB0A1B9E838F00718BDB /* Graphs */,
+				E5EFDB0F1B9E87F300718BDB /* More */,
 				E5BB68B61B9B56FC00327253 /* Supporting Files */,
 				E5BB68DA1B9B57D500327253 /* Utils */,
 				E5BB68DB1B9B57F900327253 /* Frameworks */,
@@ -341,6 +347,22 @@
 			path = dmicons;
 			sourceTree = "<group>";
 		};
+		E5EFDB0A1B9E838F00718BDB /* Graphs */ = {
+			isa = PBXGroup;
+			children = (
+				E5EFDB0B1B9E83BF00718BDB /* Graphs.storyboard */,
+				E5EFDB0D1B9E858E00718BDB /* GraphsViewController.swift */,
+			);
+			name = Graphs;
+			sourceTree = "<group>";
+		};
+		E5EFDB0F1B9E87F300718BDB /* More */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = More;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -452,6 +474,7 @@
 				E5EFDAD81B9CFF6C00718BDB /* ic_cloud_download_black_24dp_2x.png in Resources */,
 				E5EFDAF41B9E4B6F00718BDB /* 165725-200.png in Resources */,
 				E5EFDAEF1B9E4B6F00718BDB /* 105486-84.png in Resources */,
+				E5EFDB0C1B9E83BF00718BDB /* Graphs.storyboard in Resources */,
 				E5EFDAEE1B9E4B6F00718BDB /* 105484-84.png in Resources */,
 				E5EFDAFF1B9E4D1B00718BDB /* 153460-84.png in Resources */,
 				E5EFDB011B9E4D2C00718BDB /* 105514-84.png in Resources */,
@@ -531,6 +554,7 @@
 				E5EFDABE1B9CAC4A00718BDB /* DashboardViewController.swift in Sources */,
 				E5BB68BB1B9B56FC00327253 /* ViewController.swift in Sources */,
 				E5BB68E51B9B762900327253 /* Defaults.swift in Sources */,
+				E5EFDB0E1B9E858E00718BDB /* GraphsViewController.swift in Sources */,
 				E5BB68B91B9B56FC00327253 /* AppDelegate.swift in Sources */,
 				E5BB68E31B9B6A8200327253 /* Navigation.swift in Sources */,
 			);

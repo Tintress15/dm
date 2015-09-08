@@ -14,6 +14,11 @@ class DashboardViewController: UIViewController, LiquidFloatingActionButtonDataS
     var cells: [LiquidFloatingCell] = []
     var floatingActionButton: LiquidFloatingActionButton!
     
+    //MARK: - Segue methods
+    func graphSegue() {
+        performExoSegueWithIdentifier("Graphs", viewController: "GraphsIndentifier")
+    }
+    
     
     //MARK: LiquidFloating methods
     func numberOfCells(liquidFloatingActionButton: LiquidFloatingActionButton) -> Int {
@@ -32,6 +37,7 @@ class DashboardViewController: UIViewController, LiquidFloatingActionButtonDataS
             switch index {
             case 0: println("Settings segue")
             case 1: println("Graphs segue")
+                    graphSegue()
             case 2: println("Data segue")
             case 3: println("Messages segue")
             case 4: println("More segue")
