@@ -55,6 +55,9 @@
 		E5EFDB091B9E510900718BDB /* 192866-84.png in Resources */ = {isa = PBXBuildFile; fileRef = E5EFDB081B9E510900718BDB /* 192866-84.png */; };
 		E5EFDB0C1B9E83BF00718BDB /* Graphs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5EFDB0B1B9E83BF00718BDB /* Graphs.storyboard */; };
 		E5EFDB0E1B9E858E00718BDB /* GraphsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EFDB0D1B9E858E00718BDB /* GraphsViewController.swift */; };
+		E5EFDB111B9E892300718BDB /* More.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5EFDB101B9E892300718BDB /* More.storyboard */; };
+		E5EFDB131B9E894900718BDB /* MoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EFDB121B9E894900718BDB /* MoreTableViewController.swift */; };
+		E5EFDB151B9E8A1900718BDB /* MoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EFDB141B9E8A1900718BDB /* MoreTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +125,9 @@
 		E5EFDB081B9E510900718BDB /* 192866-84.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "192866-84.png"; sourceTree = "<group>"; };
 		E5EFDB0B1B9E83BF00718BDB /* Graphs.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Graphs.storyboard; path = Graphs/Graphs.storyboard; sourceTree = "<group>"; };
 		E5EFDB0D1B9E858E00718BDB /* GraphsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GraphsViewController.swift; path = Graphs/GraphsViewController.swift; sourceTree = "<group>"; };
+		E5EFDB101B9E892300718BDB /* More.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = More.storyboard; path = More/More.storyboard; sourceTree = "<group>"; };
+		E5EFDB121B9E894900718BDB /* MoreTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoreTableViewController.swift; path = More/MoreTableViewController.swift; sourceTree = "<group>"; };
+		E5EFDB141B9E8A1900718BDB /* MoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoreTableViewCell.swift; path = More/MoreTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -359,6 +365,9 @@
 		E5EFDB0F1B9E87F300718BDB /* More */ = {
 			isa = PBXGroup;
 			children = (
+				E5EFDB101B9E892300718BDB /* More.storyboard */,
+				E5EFDB121B9E894900718BDB /* MoreTableViewController.swift */,
+				E5EFDB141B9E8A1900718BDB /* MoreTableViewCell.swift */,
 			);
 			name = More;
 			sourceTree = "<group>";
@@ -447,6 +456,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5EFDAF91B9E4B6F00718BDB /* 83655-84.png in Resources */,
+				E5EFDB111B9E892300718BDB /* More.storyboard in Resources */,
 				E5BB68BE1B9B56FC00327253 /* Main.storyboard in Resources */,
 				E5EFDAED1B9E4B6F00718BDB /* 105483-84.png in Resources */,
 				E5EFDADA1B9CFF6C00718BDB /* ic_place_black_24dp_2x.png in Resources */,
@@ -552,10 +562,12 @@
 			files = (
 				E5BB68E01B9B5FA700327253 /* LoginViewController.swift in Sources */,
 				E5EFDABE1B9CAC4A00718BDB /* DashboardViewController.swift in Sources */,
+				E5EFDB131B9E894900718BDB /* MoreTableViewController.swift in Sources */,
 				E5BB68BB1B9B56FC00327253 /* ViewController.swift in Sources */,
 				E5BB68E51B9B762900327253 /* Defaults.swift in Sources */,
 				E5EFDB0E1B9E858E00718BDB /* GraphsViewController.swift in Sources */,
 				E5BB68B91B9B56FC00327253 /* AppDelegate.swift in Sources */,
+				E5EFDB151B9E8A1900718BDB /* MoreTableViewCell.swift in Sources */,
 				E5BB68E31B9B6A8200327253 /* Navigation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

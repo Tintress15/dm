@@ -19,6 +19,9 @@ class DashboardViewController: UIViewController, LiquidFloatingActionButtonDataS
         performExoSegueWithIdentifier("Graphs", viewController: "GraphsIndentifier")
     }
     
+    func moreSegue() {
+        performExoSegueWithIdentifier("More", viewController: "MoreIdentifier")
+    }
     
     //MARK: LiquidFloating methods
     func numberOfCells(liquidFloatingActionButton: LiquidFloatingActionButton) -> Int {
@@ -41,6 +44,7 @@ class DashboardViewController: UIViewController, LiquidFloatingActionButtonDataS
             case 2: println("Data segue")
             case 3: println("Messages segue")
             case 4: println("More segue")
+                    moreSegue()
             default: println("out of scope")
             }
         }
