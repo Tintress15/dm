@@ -182,6 +182,7 @@
 				E5BB68DC1B9B584300327253 /* Onboarding */,
 				E5BB68E71B9BD60F00327253 /* Dashboard */,
 				E5EFDB0A1B9E838F00718BDB /* Graphs */,
+				E5EFDB0F1B9E87F300718BDB /* More */,
 				E5BB68B61B9B56FC00327253 /* Supporting Files */,
 				E5BB68DA1B9B57D500327253 /* Utils */,
 				E5BB68DB1B9B57F900327253 /* Frameworks */,
@@ -353,6 +354,13 @@
 				E5EFDB0D1B9E858E00718BDB /* GraphsViewController.swift */,
 			);
 			name = Graphs;
+			sourceTree = "<group>";
+		};
+		E5EFDB0F1B9E87F300718BDB /* More */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = More;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
