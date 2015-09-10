@@ -10,8 +10,18 @@ import UIKit
 
 class MoreTableViewController: UITableViewController {
 
+    //MARK: - IBOutlets
+    @IBOutlet weak var backButton: UIBarButtonItem!
     
+    //This is temporary until I have an actual data source
     let moreItems = ["Item 1", "Item 2", "Item 3", "Item 4","Item 5", "Item 6",]
+    
+    //MARK: - IBActions
+    @IBAction func backButtonPressed(sender: AnyObject) {
+        println("Back button pressed")
+    }
+    
+    
     
     
     override func viewDidLoad() {
