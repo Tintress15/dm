@@ -58,6 +58,7 @@
 		E5EFDB111B9E892300718BDB /* More.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5EFDB101B9E892300718BDB /* More.storyboard */; };
 		E5EFDB131B9E894900718BDB /* MoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EFDB121B9E894900718BDB /* MoreTableViewController.swift */; };
 		E5EFDB151B9E8A1900718BDB /* MoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EFDB141B9E8A1900718BDB /* MoreTableViewCell.swift */; };
+		E5FD92CD1B9FB3090051B2C4 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FD92CC1B9FB3090051B2C4 /* MoreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,6 +129,7 @@
 		E5EFDB101B9E892300718BDB /* More.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = More.storyboard; path = More/More.storyboard; sourceTree = "<group>"; };
 		E5EFDB121B9E894900718BDB /* MoreTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoreTableViewController.swift; path = More/MoreTableViewController.swift; sourceTree = "<group>"; };
 		E5EFDB141B9E8A1900718BDB /* MoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoreTableViewCell.swift; path = More/MoreTableViewCell.swift; sourceTree = "<group>"; };
+		E5FD92CC1B9FB3090051B2C4 /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoreViewController.swift; path = More/MoreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -366,6 +368,7 @@
 			isa = PBXGroup;
 			children = (
 				E5EFDB101B9E892300718BDB /* More.storyboard */,
+				E5FD92CC1B9FB3090051B2C4 /* MoreViewController.swift */,
 				E5EFDB121B9E894900718BDB /* MoreTableViewController.swift */,
 				E5EFDB141B9E8A1900718BDB /* MoreTableViewCell.swift */,
 			);
@@ -566,6 +569,7 @@
 				E5EFDB131B9E894900718BDB /* MoreTableViewController.swift in Sources */,
 				E5BB68BB1B9B56FC00327253 /* ViewController.swift in Sources */,
 				E5BB68E51B9B762900327253 /* Defaults.swift in Sources */,
+				E5FD92CD1B9FB3090051B2C4 /* MoreViewController.swift in Sources */,
 				E5EFDB0E1B9E858E00718BDB /* GraphsViewController.swift in Sources */,
 				E5BB68B91B9B56FC00327253 /* AppDelegate.swift in Sources */,
 				E5EFDB151B9E8A1900718BDB /* MoreTableViewCell.swift in Sources */,
