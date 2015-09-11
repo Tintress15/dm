@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -33,26 +32,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am graphs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ok6-aI-380">
-                                <rect key="frame" x="79" y="165" width="162" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m17-cr-vJ6">
+                                <rect key="frame" x="0.0" y="64" width="320" height="379"/>
+                                <connections>
+                                    <segue destination="9nT-vF-WoC" kind="embed" id="Vjf-F6-e6L"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="centerY" secondItem="ok6-aI-380" secondAttribute="centerY" constant="108.5" id="4xa-9K-bOw"/>
-                            <constraint firstAttribute="centerX" secondItem="ok6-aI-380" secondAttribute="centerX" id="HgY-Lw-XfS"/>
-                            <constraint firstItem="ok6-aI-380" firstAttribute="top" secondItem="AW5-LP-84r" secondAttribute="bottom" constant="101" id="RIj-mG-Aof"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ok6-aI-380" secondAttribute="trailing" constant="63" id="Xrl-WG-WzD"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="4dV-W3-znl"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="818-Jt-eO0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-540" y="-4"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="FgW-iY-Srg">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="9nT-vF-WoC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="M3P-qX-e5X"/>
+                        <viewControllerLayoutGuide type="bottom" id="yE9-w9-tFr"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="s2p-rt-YLF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="379"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vSq-na-5vV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-958" y="618.5"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
