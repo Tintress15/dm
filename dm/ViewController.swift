@@ -13,8 +13,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        println("I am in ViewController:viewDidLoad")
-        
         self.performExoSegueWithIdentifier("Onboarding", viewController: "LoginViewController")
         
         //self.performExoSegueWithIdentifier(<#storyboard: String#>, viewController: <#String#>)

@@ -21,7 +21,7 @@ class LoginViewController: UIViewController {
     
     //MARK: - Methods
     func setConstraints() {
-
+        //TODO: SnapKit
     }
     
     

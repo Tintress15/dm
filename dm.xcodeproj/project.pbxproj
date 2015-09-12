@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		733DF9245288DA0A07A6FA61 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 320625CD4710D3E1D8AE58E6 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		E568FD5F1BA25AB1006F6356 /* DataStoreProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E568FD5E1BA25AB1006F6356 /* DataStoreProtocol.swift */; };
+		E568FD651BA38E4C006F6356 /* CloudKitDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E568FD641BA38E4C006F6356 /* CloudKitDataStore.swift */; };
+		E568FD671BA47F9C006F6356 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = E568FD661BA47F9C006F6356 /* Person.swift */; };
+		E568FD691BA47FE6006F6356 /* HealthProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E568FD681BA47FE6006F6356 /* HealthProfile.swift */; };
 		E5BB68B91B9B56FC00327253 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BB68B81B9B56FC00327253 /* AppDelegate.swift */; };
 		E5BB68BB1B9B56FC00327253 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BB68BA1B9B56FC00327253 /* ViewController.swift */; };
 		E5BB68BE1B9B56FC00327253 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5BB68BC1B9B56FC00327253 /* Main.storyboard */; };
@@ -75,6 +79,10 @@
 		320625CD4710D3E1D8AE58E6 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CF103B7583E997C4BDAD6E4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B11E8C23C84350B7D75BC07D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		E568FD5E1BA25AB1006F6356 /* DataStoreProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataStoreProtocol.swift; path = Stores/DataStoreProtocol.swift; sourceTree = "<group>"; };
+		E568FD641BA38E4C006F6356 /* CloudKitDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CloudKitDataStore.swift; path = Stores/CloudKitDataStore.swift; sourceTree = "<group>"; };
+		E568FD661BA47F9C006F6356 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Person.swift; path = Models/Person.swift; sourceTree = "<group>"; };
+		E568FD681BA47FE6006F6356 /* HealthProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HealthProfile.swift; path = Models/HealthProfile.swift; sourceTree = "<group>"; };
 		E5BB68B31B9B56FC00327253 /* dm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5BB68B71B9B56FC00327253 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5BB68B81B9B56FC00327253 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -235,6 +243,8 @@
 		E5BB68D81B9B57BC00327253 /* Stores */ = {
 			isa = PBXGroup;
 			children = (
+				E568FD5E1BA25AB1006F6356 /* DataStoreProtocol.swift */,
+				E568FD641BA38E4C006F6356 /* CloudKitDataStore.swift */,
 			);
 			name = Stores;
 			sourceTree = "<group>";
@@ -242,6 +252,8 @@
 		E5BB68D91B9B57C900327253 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E568FD661BA47F9C006F6356 /* Person.swift */,
+				E568FD681BA47FE6006F6356 /* HealthProfile.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -568,10 +580,14 @@
 				E5EFDABE1B9CAC4A00718BDB /* DashboardViewController.swift in Sources */,
 				E5EFDB131B9E894900718BDB /* MoreTableViewController.swift in Sources */,
 				E5BB68BB1B9B56FC00327253 /* ViewController.swift in Sources */,
+				E568FD651BA38E4C006F6356 /* CloudKitDataStore.swift in Sources */,
+				E568FD691BA47FE6006F6356 /* HealthProfile.swift in Sources */,
 				E5BB68E51B9B762900327253 /* Defaults.swift in Sources */,
 				E5FD92CD1B9FB3090051B2C4 /* MoreViewController.swift in Sources */,
 				E5EFDB0E1B9E858E00718BDB /* GraphsViewController.swift in Sources */,
 				E5BB68B91B9B56FC00327253 /* AppDelegate.swift in Sources */,
+				E568FD5F1BA25AB1006F6356 /* DataStoreProtocol.swift in Sources */,
+				E568FD671BA47F9C006F6356 /* Person.swift in Sources */,
 				E5EFDB151B9E8A1900718BDB /* MoreTableViewCell.swift in Sources */,
 				E5BB68E31B9B6A8200327253 /* Navigation.swift in Sources */,
 			);
