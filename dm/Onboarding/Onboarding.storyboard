@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="yfo-kx-DGp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="yfo-kx-DGp">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -46,21 +46,20 @@
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1ad-EZ-Ji1">
                                         <rect key="frame" x="0.0" y="205" width="320" height="54"/>
-                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <color key="backgroundColor" red="0.1058823529" green="0.31372549020000001" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pew-n5-vaB">
                                         <rect key="frame" x="51" y="45" width="218" height="77"/>
                                         <subviews>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Username" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6gF-AD-lib" customClass="DMTextField" customModule="dm" customModuleProvider="target">
-                                                <rect key="frame" x="7" y="7" width="204" height="28"/>
-                                                <color key="backgroundColor" red="0.48803120529999999" green="1" blue="0.50085089559999996" alpha="1" colorSpace="calibratedRGB"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Password" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nge-Ch-gvb" customClass="DMTextField" customModule="dm" customModuleProvider="target">
+                                                <rect key="frame" x="7" y="42" width="204" height="28"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="204" id="1oC-yS-hwa"/>
-                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="28" id="e1b-LD-gdz"/>
-                                                    <constraint firstAttribute="height" constant="28" id="txo-Li-hxL"/>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="204" id="vXo-nk-s7K"/>
+                                                    <constraint firstAttribute="width" constant="204" id="G88-U3-PA8"/>
+                                                    <constraint firstAttribute="height" constant="28" id="XKT-dH-9D2"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="15"/>
+                                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
@@ -68,14 +67,17 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Password" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nge-Ch-gvb" customClass="DMTextField" customModule="dm" customModuleProvider="target">
-                                                <rect key="frame" x="7" y="42" width="204" height="28"/>
-                                                <color key="backgroundColor" red="0.48803120529999999" green="1" blue="0.50085089559999996" alpha="1" colorSpace="calibratedRGB"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Username" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6gF-AD-lib" customClass="DMTextField" customModule="dm" customModuleProvider="target">
+                                                <rect key="frame" x="7" y="8" width="204" height="28"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="204" id="G88-U3-PA8"/>
-                                                    <constraint firstAttribute="height" constant="28" id="XKT-dH-9D2"/>
+                                                    <constraint firstAttribute="width" constant="204" id="1oC-yS-hwa"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="28" id="e1b-LD-gdz"/>
+                                                    <constraint firstAttribute="height" constant="28" id="txo-Li-hxL"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="204" id="vXo-nk-s7K"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="15"/>
+                                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
@@ -84,7 +86,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="6gF-AD-lib" firstAttribute="width" secondItem="Nge-Ch-gvb" secondAttribute="width" id="al9-Q1-zej"/>
                                             <constraint firstAttribute="height" constant="77" id="mVN-gD-fiv"/>
@@ -104,7 +106,7 @@
                                         </state>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="9pt-ny-btq" firstAttribute="leading" secondItem="3xy-Gi-EHa" secondAttribute="leading" constant="111" id="0Gj-JB-bp1"/>
                                     <constraint firstItem="cpd-GQ-79y" firstAttribute="leading" secondItem="3xy-Gi-EHa" secondAttribute="leading" constant="111" id="FPq-jm-dwB"/>
@@ -133,6 +135,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="LuZ-Pm-xjy"/>
                     <connections>
+                        <outlet property="bannerView" destination="1ad-EZ-Ji1" id="14c-eI-1ja"/>
                         <outlet property="forgotPassword" destination="cpd-GQ-79y" id="xCb-hb-bQU"/>
                         <outlet property="loginButton" destination="Czg-BH-cHK" id="8HG-US-KMl"/>
                         <outlet property="register" destination="9pt-ny-btq" id="Lxy-H2-HMi"/>

@@ -77,11 +77,11 @@ class DashboardViewController: UIViewController, LiquidFloatingActionButtonDataS
         let floatingFrame = CGRect(x: self.view.frame.width - 56 - 16, y: self.view.frame.height - 56 - 16, width: 56, height: 56)
         let bottomRightButton = createButton(floatingFrame, .Up)
         
-        let floatingFrame2 = CGRect(x: 16, y: 16, width: 56, height: 56)
-        let topLeftButton = createButton(floatingFrame2, .Down)
+        //let floatingFrame2 = CGRect(x: 16, y: 16, width: 56, height: 56)
+        //let topLeftButton = createButton(floatingFrame2, .Down)
         
         self.view.addSubview(bottomRightButton)
-        self.view.addSubview(topLeftButton)
+        //self.view.addSubview(topLeftButton)
         
     }
 
