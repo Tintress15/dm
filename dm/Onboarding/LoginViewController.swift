@@ -14,6 +14,9 @@ class LoginViewController: UIViewController {
     //MARK: - IBOutlets
     @IBOutlet weak var username       : UITextField!
     @IBOutlet weak var password       : UITextField!
+   
+    @IBOutlet weak var bannerView: UIImageView!
+    
     @IBOutlet weak var loginButton    : DMButton!
     @IBOutlet weak var forgotPassword : DMButton!
     @IBOutlet weak var register       : DMButton!
@@ -31,6 +34,10 @@ class LoginViewController: UIViewController {
     }
     
     //MARK: - Internal methods
+    override func viewWillAppear(animated: Bool) {
+        self.bannerView.backgroundColor = dmBlue
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

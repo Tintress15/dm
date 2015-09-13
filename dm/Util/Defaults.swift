@@ -10,6 +10,9 @@ import UIKit
 import Foundation
 
 let dmGreen = UIColor(red: 81.0/255.0, green: 188.0/255.0, blue: 133.0/255.0, alpha: 1)
+let dmBlue  = UIColor(red: 21.0/255.0, green: 43.0/255.0, blue: 72.0/255.0, alpha: 1)
+
+
 let SHORT   = "Short"
 let LONG    = "Long"
 
@@ -21,7 +24,7 @@ class DMButton : UIButton {
         self.layer.borderWidth     = 0.5
         self.layer.borderColor     = UIColor.blackColor().CGColor
         self.titleLabel?.textColor = UIColor.blackColor()
-        self.backgroundColor       = dmGreen
+        self.backgroundColor       = dmBlue
         self.tintColor             = UIColor.whiteColor()
         
     }
@@ -32,10 +35,9 @@ class DMTextField : UITextField {
         super.init(coder: aDecoder)
         self.layer.cornerRadius    = 12.0;
         self.layer.borderWidth     = 0.5
-        self.layer.borderColor     = dmGreen.CGColor
+        self.layer.borderColor     = dmBlue.CGColor
         self.textColor             = UIColor.whiteColor()
-        self.backgroundColor       = dmGreen
+        self.backgroundColor       = dmBlue
         self.tintColor             = UIColor.whiteColor()
-        
     }
 }

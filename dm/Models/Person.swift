@@ -35,79 +35,78 @@ enum GenderType {
 }
 
 class Person {
-    private var username    : String
-    private var moniker     : String
-    private var firstName   : String?
-    private var lastName    : String?
-    private var birthDate   : NSDate
-    private var gender      : GenderType
+    private var _username    : String
+    private var _moniker     : String
+    private var _firstName   : String?
+    private var _lastName    : String?
+    private var _birthDate   : NSDate
+    private var _gender      : GenderType
     
     //MARK: - Init
     init() {
-        username   = ""
-        moniker    = ""
-        birthDate  = NSDate()
-        gender     = .Undeclared
+        _username   = ""
+        _moniker    = ""
+        _birthDate  = NSDate()
+        _gender     = .Undeclared
     }
-    
-    
+        
     //MARK: - Getters
     func getUserName() -> String {
-        return self.username
+        return self._username
     }
     
     func getMoniker() -> String {
-        return self.moniker
+        return self._moniker
     }
     
     func getFirstName() -> String {
-        return self.firstName ?? ""
+        return self._firstName ?? ""
     }
     
     func getLastName() -> String {
-        return self.lastName ?? ""
+        return self._lastName ?? ""
     }
     
     func getBirthDate() -> NSDate {
-        return self.birthDate
+        return self._birthDate
     }
     
     func getGender() -> String {
-        return self.gender.description()
+        return self._gender.description()
     }
     
     func getGender(type: String) -> String {
         switch type {
         case SHORT:
-            return self.gender.shortDescription()
+            return self._gender.shortDescription()
         default:
-            return self.gender.description()
+            return self._gender.description()
         }
     }
     
     
     //MARK: - Setters
     func setUserName(username: String) {
-        self.username = username
+        self._username = username
     }
     
     func setMoniker(moniker: String) {
-        self.moniker = moniker
+        self._moniker = moniker
     }
     
     func setFirstName(firstName: String) {
-        self.firstName = firstName
+        self._firstName = firstName
     }
     
     func setLastName(lastName: String) {
-        self.lastName = lastName
+        self._lastName = lastName
     }
     
     func setBirthDate(birthDate: NSDate) {
-        self.birthDate = birthDate
+        self._birthDate = birthDate
     }
     
     func setGender(gender : GenderType) {
-        self.gender = gender
+        self._gender = gender
     }
 }
