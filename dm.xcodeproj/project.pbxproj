@@ -12,6 +12,7 @@
 		E568FD651BA38E4C006F6356 /* CloudKitDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E568FD641BA38E4C006F6356 /* CloudKitDataStore.swift */; };
 		E568FD671BA47F9C006F6356 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = E568FD661BA47F9C006F6356 /* Person.swift */; };
 		E568FD691BA47FE6006F6356 /* HealthProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E568FD681BA47FE6006F6356 /* HealthProfile.swift */; };
+		E568FD6C1BA51B6F006F6356 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E568FD6B1BA51B6F006F6356 /* DashboardViewController.swift */; };
 		E5BB68B91B9B56FC00327253 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BB68B81B9B56FC00327253 /* AppDelegate.swift */; };
 		E5BB68BB1B9B56FC00327253 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BB68BA1B9B56FC00327253 /* ViewController.swift */; };
 		E5BB68BE1B9B56FC00327253 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5BB68BC1B9B56FC00327253 /* Main.storyboard */; };
@@ -23,7 +24,7 @@
 		E5BB68E31B9B6A8200327253 /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BB68E21B9B6A8200327253 /* Navigation.swift */; };
 		E5BB68E51B9B762900327253 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BB68E41B9B762900327253 /* Defaults.swift */; };
 		E5EFDABC1B9CAB9500718BDB /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5EFDABB1B9CAB9500718BDB /* Dashboard.storyboard */; };
-		E5EFDABE1B9CAC4A00718BDB /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EFDABD1B9CAC4A00718BDB /* DashboardViewController.swift */; };
+		E5EFDABE1B9CAC4A00718BDB /* DashboardViewController-Orig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EFDABD1B9CAC4A00718BDB /* DashboardViewController-Orig.swift */; };
 		E5EFDAC31B9CD7D600718BDB /* greenline.png in Resources */ = {isa = PBXBuildFile; fileRef = E5EFDAC21B9CD7D600718BDB /* greenline.png */; };
 		E5EFDAD31B9CFF6C00718BDB /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = E5EFDAC51B9CFF6B00718BDB /* Contents.json */; };
 		E5EFDAD41B9CFF6C00718BDB /* ic_color_lens_black_24dp_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5EFDAC61B9CFF6B00718BDB /* ic_color_lens_black_24dp_2x.png */; };
@@ -83,6 +84,7 @@
 		E568FD641BA38E4C006F6356 /* CloudKitDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CloudKitDataStore.swift; path = Stores/CloudKitDataStore.swift; sourceTree = "<group>"; };
 		E568FD661BA47F9C006F6356 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Person.swift; path = Models/Person.swift; sourceTree = "<group>"; };
 		E568FD681BA47FE6006F6356 /* HealthProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HealthProfile.swift; path = Models/HealthProfile.swift; sourceTree = "<group>"; };
+		E568FD6B1BA51B6F006F6356 /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DashboardViewController.swift; path = Dashboard/DashboardViewController.swift; sourceTree = "<group>"; };
 		E5BB68B31B9B56FC00327253 /* dm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5BB68B71B9B56FC00327253 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5BB68B81B9B56FC00327253 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -98,7 +100,7 @@
 		E5BB68E21B9B6A8200327253 /* Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Navigation.swift; path = Util/Navigation.swift; sourceTree = "<group>"; };
 		E5BB68E41B9B762900327253 /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Defaults.swift; path = Util/Defaults.swift; sourceTree = "<group>"; };
 		E5EFDABB1B9CAB9500718BDB /* Dashboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Dashboard.storyboard; path = Dashboard/Dashboard.storyboard; sourceTree = "<group>"; };
-		E5EFDABD1B9CAC4A00718BDB /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DashboardViewController.swift; path = Dashboard/DashboardViewController.swift; sourceTree = "<group>"; };
+		E5EFDABD1B9CAC4A00718BDB /* DashboardViewController-Orig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "DashboardViewController-Orig.swift"; path = "Dashboard/DashboardViewController-Orig.swift"; sourceTree = "<group>"; };
 		E5EFDAC21B9CD7D600718BDB /* greenline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = greenline.png; path = SupportingFiles/greenline.png; sourceTree = "<group>"; };
 		E5EFDAC51B9CFF6B00718BDB /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
 		E5EFDAC61B9CFF6B00718BDB /* ic_color_lens_black_24dp_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_color_lens_black_24dp_2x.png; sourceTree = "<group>"; };
@@ -288,7 +290,8 @@
 			isa = PBXGroup;
 			children = (
 				E5EFDABB1B9CAB9500718BDB /* Dashboard.storyboard */,
-				E5EFDABD1B9CAC4A00718BDB /* DashboardViewController.swift */,
+				E568FD6B1BA51B6F006F6356 /* DashboardViewController.swift */,
+				E5EFDABD1B9CAC4A00718BDB /* DashboardViewController-Orig.swift */,
 			);
 			name = Dashboard;
 			sourceTree = "<group>";
@@ -577,12 +580,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5BB68E01B9B5FA700327253 /* LoginViewController.swift in Sources */,
-				E5EFDABE1B9CAC4A00718BDB /* DashboardViewController.swift in Sources */,
+				E5EFDABE1B9CAC4A00718BDB /* DashboardViewController-Orig.swift in Sources */,
 				E5EFDB131B9E894900718BDB /* MoreTableViewController.swift in Sources */,
 				E5BB68BB1B9B56FC00327253 /* ViewController.swift in Sources */,
 				E568FD651BA38E4C006F6356 /* CloudKitDataStore.swift in Sources */,
 				E568FD691BA47FE6006F6356 /* HealthProfile.swift in Sources */,
 				E5BB68E51B9B762900327253 /* Defaults.swift in Sources */,
+				E568FD6C1BA51B6F006F6356 /* DashboardViewController.swift in Sources */,
 				E5FD92CD1B9FB3090051B2C4 /* MoreViewController.swift in Sources */,
 				E5EFDB0E1B9E858E00718BDB /* GraphsViewController.swift in Sources */,
 				E5BB68B91B9B56FC00327253 /* AppDelegate.swift in Sources */,
