@@ -11,6 +11,9 @@ import UIKit
 class DashboardViewController: UIViewController {
     //MARK: - Properties
     
+    //TODO: HUD, Exploding container view (old mac style), 
+    
+    
     //MARK: - Internal methods
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -75,10 +75,11 @@
                             <outlet property="delegate" destination="ika-zB-h1o" id="SXx-OA-mD2"/>
                         </connections>
                     </tableView>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q6U-MT-qHp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="624" y="961"/>
+            <point key="canvasLocation" x="987" y="345"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="VWt-TM-7RM">
