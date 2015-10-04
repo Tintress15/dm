@@ -11,8 +11,8 @@ import Foundation
 
 extension UIViewController {
     func performExoSegueWithIdentifier(storyboard: String, viewController: String) {
-        var storyboard = UIStoryboard(name: storyboard, bundle: nil)
-        var controller = storyboard.instantiateViewControllerWithIdentifier(viewController) as! UIViewController
+        let storyboard = UIStoryboard(name: storyboard, bundle: nil)
+        let controller = storyboard.instantiateViewControllerWithIdentifier(viewController) 
         
         presentViewController(controller, animated: true, completion: nil)
     }

@@ -18,7 +18,7 @@ class MoreTableViewController: UITableViewController {
     
     //MARK: - IBActions
     @IBAction func backButtonPressed(sender: AnyObject) {
-        println("Back button pressed")
+        print("Back button pressed")
     }
     
     

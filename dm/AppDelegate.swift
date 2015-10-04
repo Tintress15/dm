@@ -16,9 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        var storyboard = UIStoryboard(name: "Onboarding", bundle: nil)
+        let storyboard = UIStoryboard(name: "Onboarding", bundle: nil)
         
-        var initialViewController = storyboard.instantiateViewControllerWithIdentifier("LoginViewController") as! UIViewController
+        let initialViewController = storyboard.instantiateViewControllerWithIdentifier("LoginViewController") 
         
         self.window?.rootViewController = initialViewController
         self.window?.makeKeyAndVisible()

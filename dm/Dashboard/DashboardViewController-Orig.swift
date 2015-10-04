@@ -9,7 +9,9 @@
 import UIKit
 import LiquidFloatingActionButton
 
-class DashboardViewController: UIViewController, LiquidFloatingActionButtonDataSource, LiquidFloatingActionButtonDelegate {
+/*
+
+class DashboardViewController-Orig: UIViewController, LiquidFloatingActionButtonDataSource, LiquidFloatingActionButtonDelegate {
 
     var cells: [LiquidFloatingCell] = []
     var floatingActionButton: LiquidFloatingActionButton!
@@ -102,3 +104,4 @@ class DashboardViewController: UIViewController, LiquidFloatingActionButtonDataS
     */
 
 }
+*/

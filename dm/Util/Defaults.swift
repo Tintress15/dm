@@ -18,7 +18,7 @@ let LONG    = "Long"
 
 
 class DMButton : UIButton {
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.layer.cornerRadius    = 12.0;
         self.layer.borderWidth     = 0.5
@@ -31,7 +31,7 @@ class DMButton : UIButton {
 }
 
 class DMTextField : UITextField {
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.layer.cornerRadius    = 12.0;
         self.layer.borderWidth     = 0.5
