@@ -66,17 +66,24 @@ internal struct ConstraintAttributes: OptionSetType, BooleanType {
     internal static var CenterY: ConstraintAttributes { return self.init(512) }
     internal static var Baseline: ConstraintAttributes { return self.init(1024) }
     
-    #if os(iOS)
+    @available(iOS 8.0, *)
     internal static var FirstBaseline: ConstraintAttributes { return self.init(2048) }
+    @available(iOS 8.0, *)
     internal static var LeftMargin: ConstraintAttributes { return self.init(4096) }
+    @available(iOS 8.0, *)
     internal static var RightMargin: ConstraintAttributes { return self.init(8192) }
+    @available(iOS 8.0, *)
     internal static var TopMargin: ConstraintAttributes { return self.init(16384) }
+    @available(iOS 8.0, *)
     internal static var BottomMargin: ConstraintAttributes { return self.init(32768) }
+    @available(iOS 8.0, *)
     internal static var LeadingMargin: ConstraintAttributes { return self.init(65536) }
+    @available(iOS 8.0, *)
     internal static var TrailingMargin: ConstraintAttributes { return self.init(131072) }
+    @available(iOS 8.0, *)
     internal static var CenterXWithinMargins: ConstraintAttributes { return self.init(262144) }
+    @available(iOS 8.0, *)
     internal static var CenterYWithinMargins: ConstraintAttributes { return self.init(524288) }
-    #endif
     
     // aggregates
     
@@ -84,83 +91,91 @@ internal struct ConstraintAttributes: OptionSetType, BooleanType {
     internal static var Size: ConstraintAttributes { return self.init(192) }
     internal static var Center: ConstraintAttributes { return self.init(768) }
     
-    #if os(iOS)
+    @available(iOS 8.0, *)
     internal static var Margins: ConstraintAttributes { return self.init(61440) }
+    
+    @available(iOS 8.0, *)
     internal static var CenterWithinMargins: ConstraintAttributes { return self.init(786432) }
-    #endif
     
     internal var layoutAttributes:[NSLayoutAttribute] {
         var attrs = [NSLayoutAttribute]()
-        if (self.intersect(ConstraintAttributes.Left)) {
+        if (self.contains(ConstraintAttributes.Left)) {
             attrs.append(.Left)
         }
-        if (self.intersect(ConstraintAttributes.Top)) {
+        if (self.contains(ConstraintAttributes.Top)) {
             attrs.append(.Top)
         }
-        if (self.intersect(ConstraintAttributes.Right)) {
+        if (self.contains(ConstraintAttributes.Right)) {
             attrs.append(.Right)
         }
-        if (self.intersect(ConstraintAttributes.Bottom)) {
+        if (self.contains(ConstraintAttributes.Bottom)) {
             attrs.append(.Bottom)
         }
-        if (self.intersect(ConstraintAttributes.Leading)) {
+        if (self.contains(ConstraintAttributes.Leading)) {
             attrs.append(.Leading)
         }
-        if (self.intersect(ConstraintAttributes.Trailing)) {
+        if (self.contains(ConstraintAttributes.Trailing)) {
             attrs.append(.Trailing)
         }
-        if (self.intersect(ConstraintAttributes.Width)) {
+        if (self.contains(ConstraintAttributes.Width)) {
             attrs.append(.Width)
         }
-        if (self.intersect(ConstraintAttributes.Height)) {
+        if (self.contains(ConstraintAttributes.Height)) {
             attrs.append(.Height)
         }
-        if (self.intersect(ConstraintAttributes.CenterX)) {
+        if (self.contains(ConstraintAttributes.CenterX)) {
             attrs.append(.CenterX)
         }
-        if (self.intersect(ConstraintAttributes.CenterY)) {
+        if (self.contains(ConstraintAttributes.CenterY)) {
             attrs.append(.CenterY)
         }
-        if (self.intersect(ConstraintAttributes.Baseline)) {
+        if (self.contains(ConstraintAttributes.Baseline)) {
             attrs.append(.Baseline)
         }
+        
         #if os(iOS)
-        if (self.intersect(ConstraintAttributes.FirstBaseline)) {
+        #if SNAPKIT_DEPLOYMENT_LEGACY
+        guard #available(iOS 8.0, *) else {
+            return attrs
+        }
+        #endif
+        if (self.contains(ConstraintAttributes.FirstBaseline)) {
             attrs.append(.FirstBaseline)
         }
-        if (self.intersect(ConstraintAttributes.LeftMargin)) {
+        if (self.contains(ConstraintAttributes.LeftMargin)) {
             attrs.append(.LeftMargin)
         }
-        if (self.intersect(ConstraintAttributes.RightMargin)) {
+        if (self.contains(ConstraintAttributes.RightMargin)) {
             attrs.append(.RightMargin)
         }
-        if (self.intersect(ConstraintAttributes.TopMargin)) {
+        if (self.contains(ConstraintAttributes.TopMargin)) {
             attrs.append(.TopMargin)
         }
-        if (self.intersect(ConstraintAttributes.BottomMargin)) {
+        if (self.contains(ConstraintAttributes.BottomMargin)) {
             attrs.append(.BottomMargin)
         }
-        if (self.intersect(ConstraintAttributes.LeadingMargin)) {
+        if (self.contains(ConstraintAttributes.LeadingMargin)) {
             attrs.append(.LeadingMargin)
         }
-        if (self.intersect(ConstraintAttributes.TrailingMargin)) {
+        if (self.contains(ConstraintAttributes.TrailingMargin)) {
             attrs.append(.TrailingMargin)
         }
-        if (self.intersect(ConstraintAttributes.CenterXWithinMargins)) {
+        if (self.contains(ConstraintAttributes.CenterXWithinMargins)) {
             attrs.append(.CenterXWithinMargins)
         }
-        if (self.intersect(ConstraintAttributes.CenterYWithinMargins)) {
+        if (self.contains(ConstraintAttributes.CenterYWithinMargins)) {
             attrs.append(.CenterYWithinMargins)
         }
         #endif
+        
         return attrs
     }
 }
 internal func +=(inout left: ConstraintAttributes, right: ConstraintAttributes) {
-    left = (left.union(right))
+    left.unionInPlace(right)
 }
 internal func -=(inout left: ConstraintAttributes, right: ConstraintAttributes) {
-    left = left.intersect(~right)
+    left.subtractInPlace(right)
 }
 internal func ==(left: ConstraintAttributes, right: ConstraintAttributes) -> Bool {
     return left.rawValue == right.rawValue

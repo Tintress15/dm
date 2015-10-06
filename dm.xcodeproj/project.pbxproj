@@ -13,6 +13,7 @@
 		E568FD671BA47F9C006F6356 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = E568FD661BA47F9C006F6356 /* Person.swift */; };
 		E568FD691BA47FE6006F6356 /* HealthProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E568FD681BA47FE6006F6356 /* HealthProfile.swift */; };
 		E568FD6C1BA51B6F006F6356 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E568FD6B1BA51B6F006F6356 /* DashboardViewController.swift */; };
+		E56C6CF31BC1C0040082F81F /* Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56C6CF21BC1C0040082F81F /* Custom.swift */; settings = {ASSET_TAGS = (); }; };
 		E5BB68B91B9B56FC00327253 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BB68B81B9B56FC00327253 /* AppDelegate.swift */; };
 		E5BB68BB1B9B56FC00327253 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BB68BA1B9B56FC00327253 /* ViewController.swift */; };
 		E5BB68BE1B9B56FC00327253 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5BB68BC1B9B56FC00327253 /* Main.storyboard */; };
@@ -85,6 +86,7 @@
 		E568FD661BA47F9C006F6356 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Person.swift; path = Models/Person.swift; sourceTree = "<group>"; };
 		E568FD681BA47FE6006F6356 /* HealthProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HealthProfile.swift; path = Models/HealthProfile.swift; sourceTree = "<group>"; };
 		E568FD6B1BA51B6F006F6356 /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DashboardViewController.swift; path = Dashboard/DashboardViewController.swift; sourceTree = "<group>"; };
+		E56C6CF21BC1C0040082F81F /* Custom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Custom.swift; path = Custom/Custom.swift; sourceTree = "<group>"; };
 		E5BB68B31B9B56FC00327253 /* dm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5BB68B71B9B56FC00327253 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5BB68B81B9B56FC00327253 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -170,6 +172,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E56C6CF11BC1BFD00082F81F /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				E56C6CF21BC1C0040082F81F /* Custom.swift */,
+			);
+			name = Custom;
+			sourceTree = "<group>";
+		};
 		E5BB68AA1B9B56FC00327253 = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +212,7 @@
 				E5EFDB0A1B9E838F00718BDB /* Graphs */,
 				E5EFDB0F1B9E87F300718BDB /* More */,
 				E5BB68B61B9B56FC00327253 /* Supporting Files */,
+				E56C6CF11BC1BFD00082F81F /* Custom */,
 				E5BB68DA1B9B57D500327253 /* Utils */,
 				E5BB68DB1B9B57F900327253 /* Frameworks */,
 				E5BB68BF1B9B56FC00327253 /* Images.xcassets */,
@@ -583,6 +594,7 @@
 			files = (
 				E5BB68E01B9B5FA700327253 /* LoginViewController.swift in Sources */,
 				E5EFDABE1B9CAC4A00718BDB /* DashboardViewController-Orig.swift in Sources */,
+				E56C6CF31BC1C0040082F81F /* Custom.swift in Sources */,
 				E5EFDB131B9E894900718BDB /* MoreTableViewController.swift in Sources */,
 				E5BB68BB1B9B56FC00327253 /* ViewController.swift in Sources */,
 				E568FD651BA38E4C006F6356 /* CloudKitDataStore.swift in Sources */,

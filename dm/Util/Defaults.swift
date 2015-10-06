@@ -20,13 +20,14 @@ let LONG    = "Long"
 class DMButton : UIButton {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        self.layer.cornerRadius    = 12.0;
+        
+        self.layer.cornerRadius    = self.frame.size.height / 2
+        self.layer.masksToBounds   = false
         self.layer.borderWidth     = 0.5
         self.layer.borderColor     = UIColor.blackColor().CGColor
         self.titleLabel?.textColor = UIColor.blackColor()
-        self.backgroundColor       = dmBlue
         self.tintColor             = UIColor.whiteColor()
-        
+        self.backgroundColor       = dmBlue
     }
 }
 

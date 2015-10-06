@@ -9,6 +9,12 @@
 import UIKit
 
 class DashboardViewController: UIViewController {
+    //MARK: - IBOutlets
+    
+    
+    
+    
+    
     //MARK: - Properties
     
     //TODO: HUD, Exploding container view (old mac style), 

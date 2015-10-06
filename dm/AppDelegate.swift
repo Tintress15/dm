@@ -16,11 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        let storyboard = UIStoryboard(name: "Onboarding", bundle: nil)
+//        let storyboard = UIStoryboard(name: "Onboarding", bundle: nil)
+//        
+//        let initialViewController = storyboard.instantiateViewControllerWithIdentifier("LoginViewController") 
         
-        let initialViewController = storyboard.instantiateViewControllerWithIdentifier("LoginViewController") 
-        
-        self.window?.rootViewController = initialViewController
+//        self.window?.rootViewController = initialViewController
         self.window?.makeKeyAndVisible()
 
         return true
