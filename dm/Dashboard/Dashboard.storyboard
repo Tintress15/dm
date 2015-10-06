@@ -50,6 +50,9 @@
                                         <state key="normal" title="My Data">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="myDataButtonPressed:" destination="0ZR-oC-JEY" eventType="touchUpInside" id="rUw-3p-Ezc"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VfA-I1-umm" customClass="DMButton" customModule="dm" customModuleProvider="target">
                                         <rect key="frame" x="21" y="139" width="83" height="83"/>
@@ -57,6 +60,9 @@
                                         <state key="normal" title="Graphs">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="graphsButtonPressed:" destination="0ZR-oC-JEY" eventType="touchUpInside" id="hgz-b5-viK"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qgq-sb-QwU" customClass="DMButton" customModule="dm" customModuleProvider="target">
                                         <rect key="frame" x="130" y="39" width="83" height="83"/>
@@ -64,6 +70,9 @@
                                         <state key="normal" title="Logs">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="logsButtonPressed:" destination="0ZR-oC-JEY" eventType="touchUpInside" id="HzF-oe-TBL"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2VF-aV-t3f" customClass="DMButton" customModule="dm" customModuleProvider="target">
                                         <rect key="frame" x="237" y="39" width="83" height="83"/>
@@ -71,6 +80,9 @@
                                         <state key="normal" title="Meds">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="medsButtonPressed:" destination="0ZR-oC-JEY" eventType="touchUpInside" id="5EZ-NY-0Er"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QJz-yg-Nt8" customClass="DMButton" customModule="dm" customModuleProvider="target">
                                         <rect key="frame" x="130" y="139" width="83" height="83"/>
@@ -78,6 +90,9 @@
                                         <state key="normal" title="Food">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="foodButtonPressed:" destination="0ZR-oC-JEY" eventType="touchUpInside" id="4Gm-pL-f7I"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CuU-gH-ANj" customClass="DMButton" customModule="dm" customModuleProvider="target">
                                         <rect key="frame" x="237" y="139" width="83" height="83"/>
@@ -85,6 +100,9 @@
                                         <state key="normal" title="Settings">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="settingsButtonPressed:" destination="0ZR-oC-JEY" eventType="touchUpInside" id="qQx-33-19e"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.83970565029999999" green="0.83970565029999999" blue="0.83970565029999999" alpha="1" colorSpace="calibratedRGB"/>

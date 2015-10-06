@@ -26,6 +26,34 @@ class DashboardViewController: UIViewController {
     
     //MARK: - Properties
     
+    
+    
+    //MARK: - IBActions
+    
+    @IBAction func myDataButtonPressed(sender: AnyObject) {
+    }
+    
+    @IBAction func logsButtonPressed(sender: AnyObject) {
+    }
+    
+    @IBAction func medsButtonPressed(sender: AnyObject) {
+    }
+    
+    @IBAction func graphsButtonPressed(sender: AnyObject) {
+    }
+    
+    @IBAction func foodButtonPressed(sender: AnyObject) {
+    }
+    
+    @IBAction func settingsButtonPressed(sender: AnyObject) {
+    }
+    
+    
+    
+    
+    
+    
+    
     //TODO: HUD, Exploding container view (old mac style), 
     
     
