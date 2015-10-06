@@ -61,7 +61,7 @@ class DashboardViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        dashboardView.frame = CGRectMake(0, 0, super.view.frame.width, super.view.frame.height)
     }
 
     override func didReceiveMemoryWarning() {
