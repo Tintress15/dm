@@ -95,6 +95,12 @@
                     <navigationItem key="navigationItem" id="cNf-1I-sMB"/>
                     <connections>
                         <outlet property="dashboardView" destination="CQB-nw-C3b" id="siC-u0-tsY"/>
+                        <outlet property="foodButton" destination="QJz-yg-Nt8" id="kxH-N3-PLX"/>
+                        <outlet property="graphButton" destination="VfA-I1-umm" id="8Zl-wZ-VZM"/>
+                        <outlet property="logsButton" destination="qgq-sb-QwU" id="08Z-PB-cSe"/>
+                        <outlet property="medsButton" destination="2VF-aV-t3f" id="yvX-WQ-rwX"/>
+                        <outlet property="myDataButton" destination="X6W-uY-b9U" id="7Hr-pv-9dI"/>
+                        <outlet property="settingsButton" destination="CuU-gH-ANj" id="IF5-dw-0Sx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KNf-ue-c8F" userLabel="First Responder" sceneMemberID="firstResponder"/>

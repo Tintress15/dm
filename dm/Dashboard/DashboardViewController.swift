@@ -11,7 +11,15 @@ import UIKit
 class DashboardViewController: UIViewController {
     //MARK: - IBOutlets
     
-    @IBOutlet weak var dashboardView: UIView!
+    @IBOutlet weak var dashboardView  : UIView!
+    @IBOutlet weak var myDataButton   : DMButton!
+    @IBOutlet weak var logsButton     : DMButton!
+    @IBOutlet weak var medsButton     : DMButton!
+    @IBOutlet weak var graphButton    : DMButton!
+    @IBOutlet weak var foodButton     : DMButton!
+    @IBOutlet weak var settingsButton : DMButton!
+    
+    
     
     
     
