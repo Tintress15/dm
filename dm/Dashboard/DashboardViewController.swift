@@ -19,11 +19,6 @@ class DashboardViewController: UIViewController {
     @IBOutlet weak var foodButton     : DMButton!
     @IBOutlet weak var settingsButton : DMButton!
     
-    
-    
-    
-    
-    
     //MARK: - Properties
     
     
@@ -35,23 +30,23 @@ class DashboardViewController: UIViewController {
     }
     
     @IBAction func logsButtonPressed(sender: AnyObject) {
-        
+        print("logsButtonPressed")
     }
     
     @IBAction func medsButtonPressed(sender: AnyObject) {
-        
+        print("medsButtonPressed")
     }
     
     @IBAction func graphsButtonPressed(sender: AnyObject) {
-        
+        print("graphsButtonPressed")
     }
     
     @IBAction func foodButtonPressed(sender: AnyObject) {
-        
+        print("foodButtonPressed")
     }
     
     @IBAction func settingsButtonPressed(sender: AnyObject) {
-        
+        print("settingsButtonPressed")
     }
     
     
