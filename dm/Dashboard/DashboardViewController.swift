@@ -11,6 +11,7 @@ import UIKit
 class DashboardViewController: UIViewController {
     //MARK: - IBOutlets
     
+    @IBOutlet weak var dashboardView: UIView!
     
     
     

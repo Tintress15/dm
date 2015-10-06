@@ -93,6 +93,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="cNf-1I-sMB"/>
+                    <connections>
+                        <outlet property="dashboardView" destination="CQB-nw-C3b" id="siC-u0-tsY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KNf-ue-c8F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
