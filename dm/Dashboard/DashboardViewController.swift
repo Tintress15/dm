@@ -10,7 +10,7 @@ import UIKit
 
 class DashboardViewController: UIViewController {
     //MARK: - IBOutlets
-    
+    //FIXME: graphButton is singular, graphsButtonPressed is plural
     @IBOutlet weak var dashboardView  : UIView!
     @IBOutlet weak var myDataButton   : DMButton!
     @IBOutlet weak var logsButton     : DMButton!
@@ -53,6 +53,8 @@ class DashboardViewController: UIViewController {
     
     //MARK: - Constraints
     func setButtonConstraints() {
+        dashboardView.frame = CGRectMake(0, 0, super.view.frame.width, super.view.frame.height)
+        
         myDataButton.snp_makeConstraints { (make) -> Void in
             make.top.equalTo(self.dashboardView.snp_top).offset(90)
             make.left.equalTo(self.dashboardView.snp_left).offset(30)
@@ -94,7 +96,6 @@ class DashboardViewController: UIViewController {
             make.height.equalTo(foodButton.snp_height)
             make.width.equalTo(foodButton.snp_width)
         }
-        
     }
     
     
@@ -105,14 +106,13 @@ class DashboardViewController: UIViewController {
     //MARK: - Internal methods
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        dashboardView.frame = CGRectMake(0, 0, super.view.frame.width, super.view.frame.height)
+        
         setButtonConstraints()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
     }
     
 

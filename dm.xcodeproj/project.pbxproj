@@ -14,6 +14,8 @@
 		E568FD691BA47FE6006F6356 /* HealthProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E568FD681BA47FE6006F6356 /* HealthProfile.swift */; };
 		E568FD6C1BA51B6F006F6356 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E568FD6B1BA51B6F006F6356 /* DashboardViewController.swift */; };
 		E56C6CF31BC1C0040082F81F /* Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56C6CF21BC1C0040082F81F /* Custom.swift */; settings = {ASSET_TAGS = (); }; };
+		E57E30B51BC4971400CE5FBE /* MyDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57E30B41BC4971400CE5FBE /* MyDataTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E57E30B71BC4974400CE5FBE /* MyDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57E30B61BC4974400CE5FBE /* MyDataTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		E5BB68B91B9B56FC00327253 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BB68B81B9B56FC00327253 /* AppDelegate.swift */; };
 		E5BB68BB1B9B56FC00327253 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BB68BA1B9B56FC00327253 /* ViewController.swift */; };
 		E5BB68BE1B9B56FC00327253 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5BB68BC1B9B56FC00327253 /* Main.storyboard */; };
@@ -87,6 +89,8 @@
 		E568FD681BA47FE6006F6356 /* HealthProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HealthProfile.swift; path = Models/HealthProfile.swift; sourceTree = "<group>"; };
 		E568FD6B1BA51B6F006F6356 /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DashboardViewController.swift; path = Dashboard/DashboardViewController.swift; sourceTree = "<group>"; };
 		E56C6CF21BC1C0040082F81F /* Custom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Custom.swift; path = Custom/Custom.swift; sourceTree = "<group>"; };
+		E57E30B41BC4971400CE5FBE /* MyDataTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyDataTableViewController.swift; path = Dashboard/MyDataTableViewController.swift; sourceTree = "<group>"; };
+		E57E30B61BC4974400CE5FBE /* MyDataTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyDataTableViewCell.swift; path = Dashboard/MyDataTableViewCell.swift; sourceTree = "<group>"; };
 		E5BB68B31B9B56FC00327253 /* dm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5BB68B71B9B56FC00327253 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5BB68B81B9B56FC00327253 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -303,6 +307,8 @@
 				E5EFDABB1B9CAB9500718BDB /* Dashboard.storyboard */,
 				E568FD6B1BA51B6F006F6356 /* DashboardViewController.swift */,
 				E5EFDABD1B9CAC4A00718BDB /* DashboardViewController-Orig.swift */,
+				E57E30B41BC4971400CE5FBE /* MyDataTableViewController.swift */,
+				E57E30B61BC4974400CE5FBE /* MyDataTableViewCell.swift */,
 			);
 			name = Dashboard;
 			sourceTree = "<group>";
@@ -592,6 +598,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E57E30B51BC4971400CE5FBE /* MyDataTableViewController.swift in Sources */,
+				E57E30B71BC4974400CE5FBE /* MyDataTableViewCell.swift in Sources */,
 				E5BB68E01B9B5FA700327253 /* LoginViewController.swift in Sources */,
 				E5EFDABE1B9CAC4A00718BDB /* DashboardViewController-Orig.swift in Sources */,
 				E56C6CF31BC1C0040082F81F /* Custom.swift in Sources */,
