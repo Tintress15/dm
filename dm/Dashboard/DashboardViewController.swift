@@ -31,26 +31,76 @@ class DashboardViewController: UIViewController {
     //MARK: - IBActions
     
     @IBAction func myDataButtonPressed(sender: AnyObject) {
+        print("myDataButtonPressed")
     }
     
     @IBAction func logsButtonPressed(sender: AnyObject) {
+        
     }
     
     @IBAction func medsButtonPressed(sender: AnyObject) {
+        
     }
     
     @IBAction func graphsButtonPressed(sender: AnyObject) {
+        
     }
     
     @IBAction func foodButtonPressed(sender: AnyObject) {
+        
     }
     
     @IBAction func settingsButtonPressed(sender: AnyObject) {
+        
     }
     
     
     
-    
+    //MARK: - Constraints
+    func setButtonConstraints() {
+        myDataButton.snp_makeConstraints { (make) -> Void in
+            make.top.equalTo(self.dashboardView.snp_top).offset(90)
+            make.left.equalTo(self.dashboardView.snp_left).offset(30)
+            make.height.equalTo(83)
+            make.width.equalTo(self.myDataButton.snp_height)
+        }
+        
+        logsButton.snp_makeConstraints { (make) -> Void in
+            make.top.equalTo(myDataButton.snp_top)
+            make.left.equalTo(myDataButton.snp_right).offset(30)
+            make.height.equalTo(myDataButton.snp_height)
+            make.width.equalTo(myDataButton.snp_width)
+        }
+        
+        medsButton.snp_makeConstraints { (make) -> Void in
+            make.top.equalTo(logsButton.snp_top)
+            make.left.equalTo(logsButton.snp_right).offset(30)
+            make.height.equalTo(logsButton.snp_height)
+            make.width.equalTo(logsButton.snp_width)
+        }
+        
+        graphButton.snp_makeConstraints { (make) -> Void in
+            make.top.equalTo(myDataButton.snp_bottom).offset(30)
+            make.left.equalTo(dashboardView.snp_left).offset(30)
+            make.height.equalTo(logsButton.snp_height)
+            make.width.equalTo(logsButton.snp_width)
+        }
+        
+        foodButton.snp_makeConstraints { (make) -> Void in
+            make.top.equalTo(logsButton.snp_bottom).offset(30)
+            make.left.equalTo(graphButton.snp_right).offset(30)
+            make.height.equalTo(logsButton.snp_height)
+            make.width.equalTo(logsButton.snp_width)
+        }
+        
+        settingsButton.snp_makeConstraints { (make) -> Void in
+            make.top.equalTo(medsButton.snp_bottom).offset(30)
+            make.left.equalTo(foodButton.snp_right).offset(30)
+            make.height.equalTo(foodButton.snp_height)
+            make.width.equalTo(foodButton.snp_width)
+        }
+        
+    }
     
     
     
@@ -62,6 +112,7 @@ class DashboardViewController: UIViewController {
         super.viewDidLoad()
 
         dashboardView.frame = CGRectMake(0, 0, super.view.frame.width, super.view.frame.height)
+        setButtonConstraints()
     }
 
     override func didReceiveMemoryWarning() {
