@@ -16,6 +16,10 @@
 		E56C6CF31BC1C0040082F81F /* Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56C6CF21BC1C0040082F81F /* Custom.swift */; settings = {ASSET_TAGS = (); }; };
 		E57E30B51BC4971400CE5FBE /* MyDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57E30B41BC4971400CE5FBE /* MyDataTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		E57E30B71BC4974400CE5FBE /* MyDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57E30B61BC4974400CE5FBE /* MyDataTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		E57E30B91BC4C57A00CE5FBE /* LogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57E30B81BC4C57A00CE5FBE /* LogTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E57E30BB1BC4C59A00CE5FBE /* LogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57E30BA1BC4C59A00CE5FBE /* LogTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		E57E30BD1BC4CA9400CE5FBE /* MedsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57E30BC1BC4CA9400CE5FBE /* MedsTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E57E30BF1BC4CABE00CE5FBE /* MedsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57E30BE1BC4CABE00CE5FBE /* MedsTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		E5BB68B91B9B56FC00327253 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BB68B81B9B56FC00327253 /* AppDelegate.swift */; };
 		E5BB68BB1B9B56FC00327253 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BB68BA1B9B56FC00327253 /* ViewController.swift */; };
 		E5BB68BE1B9B56FC00327253 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5BB68BC1B9B56FC00327253 /* Main.storyboard */; };
@@ -91,6 +95,10 @@
 		E56C6CF21BC1C0040082F81F /* Custom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Custom.swift; path = Custom/Custom.swift; sourceTree = "<group>"; };
 		E57E30B41BC4971400CE5FBE /* MyDataTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyDataTableViewController.swift; path = Dashboard/MyDataTableViewController.swift; sourceTree = "<group>"; };
 		E57E30B61BC4974400CE5FBE /* MyDataTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyDataTableViewCell.swift; path = Dashboard/MyDataTableViewCell.swift; sourceTree = "<group>"; };
+		E57E30B81BC4C57A00CE5FBE /* LogTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogTableViewController.swift; path = Dashboard/LogTableViewController.swift; sourceTree = "<group>"; };
+		E57E30BA1BC4C59A00CE5FBE /* LogTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogTableViewCell.swift; path = Dashboard/LogTableViewCell.swift; sourceTree = "<group>"; };
+		E57E30BC1BC4CA9400CE5FBE /* MedsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MedsTableViewController.swift; path = Dashboard/MedsTableViewController.swift; sourceTree = "<group>"; };
+		E57E30BE1BC4CABE00CE5FBE /* MedsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedsTableViewCell.swift; sourceTree = "<group>"; };
 		E5BB68B31B9B56FC00327253 /* dm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5BB68B71B9B56FC00327253 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5BB68B81B9B56FC00327253 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -307,8 +315,12 @@
 				E5EFDABB1B9CAB9500718BDB /* Dashboard.storyboard */,
 				E568FD6B1BA51B6F006F6356 /* DashboardViewController.swift */,
 				E5EFDABD1B9CAC4A00718BDB /* DashboardViewController-Orig.swift */,
+				E57E30B81BC4C57A00CE5FBE /* LogTableViewController.swift */,
+				E57E30BA1BC4C59A00CE5FBE /* LogTableViewCell.swift */,
 				E57E30B41BC4971400CE5FBE /* MyDataTableViewController.swift */,
 				E57E30B61BC4974400CE5FBE /* MyDataTableViewCell.swift */,
+				E57E30BC1BC4CA9400CE5FBE /* MedsTableViewController.swift */,
+				E57E30BE1BC4CABE00CE5FBE /* MedsTableViewCell.swift */,
 			);
 			name = Dashboard;
 			sourceTree = "<group>";
@@ -604,6 +616,7 @@
 				E5EFDABE1B9CAC4A00718BDB /* DashboardViewController-Orig.swift in Sources */,
 				E56C6CF31BC1C0040082F81F /* Custom.swift in Sources */,
 				E5EFDB131B9E894900718BDB /* MoreTableViewController.swift in Sources */,
+				E57E30B91BC4C57A00CE5FBE /* LogTableViewController.swift in Sources */,
 				E5BB68BB1B9B56FC00327253 /* ViewController.swift in Sources */,
 				E568FD651BA38E4C006F6356 /* CloudKitDataStore.swift in Sources */,
 				E568FD691BA47FE6006F6356 /* HealthProfile.swift in Sources */,
@@ -613,8 +626,11 @@
 				E5EFDB0E1B9E858E00718BDB /* GraphsViewController.swift in Sources */,
 				E5BB68B91B9B56FC00327253 /* AppDelegate.swift in Sources */,
 				E568FD5F1BA25AB1006F6356 /* DataStoreProtocol.swift in Sources */,
+				E57E30BD1BC4CA9400CE5FBE /* MedsTableViewController.swift in Sources */,
 				E568FD671BA47F9C006F6356 /* Person.swift in Sources */,
+				E57E30BF1BC4CABE00CE5FBE /* MedsTableViewCell.swift in Sources */,
 				E5EFDB151B9E8A1900718BDB /* MoreTableViewCell.swift in Sources */,
+				E57E30BB1BC4C59A00CE5FBE /* LogTableViewCell.swift in Sources */,
 				E5BB68E31B9B6A8200327253 /* Navigation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

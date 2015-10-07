@@ -32,10 +32,12 @@ class DashboardViewController: UIViewController {
     
     @IBAction func logsButtonPressed(sender: AnyObject) {
         print("logsButtonPressed")
+        performSegueWithIdentifier("LogIdentifier", sender: self)
     }
     
     @IBAction func medsButtonPressed(sender: AnyObject) {
         print("medsButtonPressed")
+        performSegueWithIdentifier("MedsIdentifier", sender: self)
     }
     
     @IBAction func graphsButtonPressed(sender: AnyObject) {
@@ -125,12 +127,12 @@ class DashboardViewController: UIViewController {
         switch segue.identifier! {
             case "MyDataIdentifier":
                let vc = segue.destinationViewController as! MyDataTableViewController
-//            case "LogsIdentifier":
-//                let vc = segue.destinationViewController as! LogsTableViewController
+            case "LogIdentifier":
+                let vc = segue.destinationViewController as! LogTableViewController
 //            case "GraphsIdentifier":
 //                let vc = segue.destinationViewController as! GraphsTableViewController
-//            case "MedsIdentifier":
-//                let vc = segue.destinationViewController as! MedsTableViewController
+            case "MedsIdentifier":
+                let vc = segue.destinationViewController as! MedsTableViewController
 //            case "FoodIdentifier":
 //                let vc = segue.destinationViewController as! FoodTableViewController
 //            case "SettingsIdentifier":
@@ -138,14 +140,5 @@ class DashboardViewController: UIViewController {
             default:
                 print("No reason why you should wind up here.")
         }
-        
-        
-        
-        if segue.identifier == "MyDataIdentifier" {
-            let vc = segue.destinationViewController as! MyDataTableViewController
-        }
-            
     }
-    
-
 }

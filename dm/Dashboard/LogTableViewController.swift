@@ -1,5 +1,5 @@
 //
-//  MyDataTableViewController.swift
+//  LogTableViewController.swift
 //  dm
 //
 //  Created by mpc on 10/6/15.
@@ -8,11 +8,8 @@
 
 import UIKit
 
-class MyDataTableViewController: UITableViewController {
+class LogTableViewController: UITableViewController {
 
-    //MARK: - Properties
-    var dataSource = [String]()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -42,7 +39,7 @@ class MyDataTableViewController: UITableViewController {
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("MyDataCellIdentifier", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("LogIdentifier", forIndexPath: indexPath)
 
         // Configure the cell...
 

@@ -1,5 +1,5 @@
 //
-//  MyDataTableViewController.swift
+//  MedsTableViewController.swift
 //  dm
 //
 //  Created by mpc on 10/6/15.
@@ -8,11 +8,8 @@
 
 import UIKit
 
-class MyDataTableViewController: UITableViewController {
+class MedsTableViewController: UITableViewController {
 
-    //MARK: - Properties
-    var dataSource = [String]()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -42,14 +39,13 @@ class MyDataTableViewController: UITableViewController {
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("MyDataCellIdentifier", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("MedsCellIdentifier", forIndexPath: indexPath)
 
         // Configure the cell...
 
         return cell
     }
     
-
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
