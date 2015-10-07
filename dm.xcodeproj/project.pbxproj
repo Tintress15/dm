@@ -309,10 +309,10 @@
 			isa = PBXGroup;
 			children = (
 				E5EFDABB1B9CAB9500718BDB /* Dashboard.storyboard */,
-				E57E30B81BC4C57A00CE5FBE /* LogTableViewController.swift */,
-				E57E30BA1BC4C59A00CE5FBE /* LogTableViewCell.swift */,
 				E568FD6B1BA51B6F006F6356 /* DashboardViewController.swift */,
 				E5EFDABD1B9CAC4A00718BDB /* DashboardViewController-Orig.swift */,
+				E57E30B81BC4C57A00CE5FBE /* LogTableViewController.swift */,
+				E57E30BA1BC4C59A00CE5FBE /* LogTableViewCell.swift */,
 				E57E30B41BC4971400CE5FBE /* MyDataTableViewController.swift */,
 				E57E30B61BC4974400CE5FBE /* MyDataTableViewCell.swift */,
 			);
