@@ -47,6 +47,7 @@ class DashboardViewController: UIViewController {
     
     @IBAction func foodButtonPressed(sender: AnyObject) {
         print("foodButtonPressed")
+        performSegueWithIdentifier("FoodIdentifier", sender: self)
     }
     
     @IBAction func settingsButtonPressed(sender: AnyObject) {
@@ -134,8 +135,8 @@ class DashboardViewController: UIViewController {
                 let vc = segue.destinationViewController as! GraphsViewController
             case "MedsIdentifier":
                 let vc = segue.destinationViewController as! MedsTableViewController
-//            case "FoodIdentifier":
-//                let vc = segue.destinationViewController as! FoodTableViewController
+            case "FoodIdentifier":
+                let vc = segue.destinationViewController as! FoodTableViewController
 //            case "SettingsIdentifier":
 //                let vc = segue.destinationViewController as! SettingsTableViewController
             default:

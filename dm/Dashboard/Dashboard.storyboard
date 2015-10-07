@@ -127,7 +127,7 @@
                         <segue destination="iWo-wO-YBm" kind="push" identifier="LogIdentifier" id="cej-fK-vsX"/>
                         <segue destination="FBV-35-IEx" kind="push" identifier="MedsIdentifier" id="PxN-Hj-Jg3"/>
                         <segue destination="qiQ-hh-ali" kind="push" identifier="GraphsIdentifier" id="Zk1-1x-noS"/>
-                        <segue destination="rJA-pR-tzX" kind="push" id="Fg5-t5-eyb"/>
+                        <segue destination="rJA-pR-tzX" kind="push" identifier="FoodIdentifier" id="Fg5-t5-eyb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KNf-ue-c8F" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -183,7 +183,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MedsCellIdentifier" id="dER-Mg-GHs" customClass="MedsTableViewCell" customModule="dm" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dER-Mg-GHs" id="0Sv-ns-XEM">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
