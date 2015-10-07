@@ -126,6 +126,7 @@
                         <segue destination="ika-zB-h1o" kind="push" identifier="MyDataIdentifier" id="Bnk-oZ-g2D"/>
                         <segue destination="iWo-wO-YBm" kind="push" identifier="LogIdentifier" id="cej-fK-vsX"/>
                         <segue destination="FBV-35-IEx" kind="push" identifier="MedsIdentifier" id="PxN-Hj-Jg3"/>
+                        <segue destination="P57-l6-Xhz" kind="push" id="6lo-Kx-PoY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KNf-ue-c8F" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -274,7 +275,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r5Q-Oy-VB7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1557" y="394"/>
+            <point key="canvasLocation" x="1432" y="228"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="bZd-4g-nz4">
