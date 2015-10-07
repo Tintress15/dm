@@ -128,7 +128,7 @@
                         <segue destination="FBV-35-IEx" kind="push" identifier="MedsIdentifier" id="PxN-Hj-Jg3"/>
                         <segue destination="qiQ-hh-ali" kind="push" identifier="GraphsIdentifier" id="Zk1-1x-noS"/>
                         <segue destination="rJA-pR-tzX" kind="push" identifier="FoodIdentifier" id="Fg5-t5-eyb"/>
-                        <segue destination="z1x-vl-TKj" kind="push" id="nIs-lL-oka"/>
+                        <segue destination="z1x-vl-TKj" kind="push" identifier="SettingsIdentifier" id="nIs-lL-oka"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KNf-ue-c8F" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -145,7 +145,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyDataCellIdentifier" id="USg-wk-fuF" customClass="MyDataTableViewCell" customModule="dm" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="USg-wk-fuF" id="jCt-Fu-KQp">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -184,7 +184,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MedsCellIdentifier" id="dER-Mg-GHs" customClass="MedsTableViewCell" customModule="dm" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dER-Mg-GHs" id="0Sv-ns-XEM">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -260,7 +260,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FoodCellIdentifier" id="WL6-Wu-pCv" customClass="FoodTableViewCell" customModule="dm" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WL6-Wu-pCv" id="dZJ-yT-1zp">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -297,7 +297,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="cvi-K1-USq" customClass="SettingsTableViewCell" customModule="dm" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingsCellIdentifier" id="cvi-K1-USq" customClass="SettingsTableViewCell" customModule="dm" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cvi-K1-USq" id="eDJ-hy-E7s">
@@ -315,7 +315,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6oF-VL-P2p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1014" y="318"/>
+            <point key="canvasLocation" x="1060" y="1414"/>
         </scene>
         <!--Graphs View Controller-->
         <scene sceneID="VWt-TM-7RM">
