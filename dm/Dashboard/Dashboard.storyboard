@@ -123,7 +123,7 @@
                         <outlet property="medsButton" destination="2VF-aV-t3f" id="yvX-WQ-rwX"/>
                         <outlet property="myDataButton" destination="X6W-uY-b9U" id="7Hr-pv-9dI"/>
                         <outlet property="settingsButton" destination="CuU-gH-ANj" id="IF5-dw-0Sx"/>
-                        <segue destination="ika-zB-h1o" kind="push" id="Bnk-oZ-g2D"/>
+                        <segue destination="ika-zB-h1o" kind="push" identifier="MyDataIdentifier" id="Bnk-oZ-g2D"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KNf-ue-c8F" userLabel="First Responder" sceneMemberID="firstResponder"/>
