@@ -126,7 +126,7 @@
                         <segue destination="ika-zB-h1o" kind="push" identifier="MyDataIdentifier" id="Bnk-oZ-g2D"/>
                         <segue destination="iWo-wO-YBm" kind="push" identifier="LogIdentifier" id="cej-fK-vsX"/>
                         <segue destination="FBV-35-IEx" kind="push" identifier="MedsIdentifier" id="PxN-Hj-Jg3"/>
-                        <segue destination="P57-l6-Xhz" kind="push" id="6lo-Kx-PoY"/>
+                        <segue destination="qiQ-hh-ali" kind="push" identifier="GraphsIdentifier" id="Zk1-1x-noS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KNf-ue-c8F" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -182,7 +182,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MedsCellIdentifier" id="dER-Mg-GHs" customClass="MedsTableViewCell" customModule="dm" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dER-Mg-GHs" id="0Sv-ns-XEM">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -220,7 +220,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LogIdentifier" id="HnW-gf-7dX" customClass="LogTableViewCell" customModule="dm" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HnW-gf-7dX" id="Yt1-Sn-jJL">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -255,27 +255,22 @@
                     <view key="view" contentMode="scaleToFill" id="KQa-1L-bXy">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am Graphs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kki-wb-zFz">
+                                <rect key="frame" x="58" y="109" width="113" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="kgx-6d-pyO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hY7-zx-W1E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1464" y="715"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="u1J-QD-IXN">
-            <objects>
-                <viewController id="P57-l6-Xhz" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="dR1-Rj-mJ9">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="S92-wa-NCp"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="r5Q-Oy-VB7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1432" y="228"/>
+            <point key="canvasLocation" x="1469" y="135"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="bZd-4g-nz4">
