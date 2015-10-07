@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		733DF9245288DA0A07A6FA61 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 320625CD4710D3E1D8AE58E6 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		E52173571BC4D17B00F4E107 /* GraphsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52173561BC4D17B00F4E107 /* GraphsViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E521735A1BC565EE00F4E107 /* FoodTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52173591BC565EE00F4E107 /* FoodTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E521735C1BC5664500F4E107 /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E521735B1BC5664500F4E107 /* FoodTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		E568FD5F1BA25AB1006F6356 /* DataStoreProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E568FD5E1BA25AB1006F6356 /* DataStoreProtocol.swift */; };
 		E568FD651BA38E4C006F6356 /* CloudKitDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E568FD641BA38E4C006F6356 /* CloudKitDataStore.swift */; };
 		E568FD671BA47F9C006F6356 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = E568FD661BA47F9C006F6356 /* Person.swift */; };
@@ -88,6 +90,8 @@
 		5CF103B7583E997C4BDAD6E4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B11E8C23C84350B7D75BC07D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E52173561BC4D17B00F4E107 /* GraphsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GraphsViewController.swift; path = Dashboard/GraphsViewController.swift; sourceTree = "<group>"; };
+		E52173591BC565EE00F4E107 /* FoodTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FoodTableViewController.swift; path = Dashboard/FoodTableViewController.swift; sourceTree = "<group>"; };
+		E521735B1BC5664500F4E107 /* FoodTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FoodTableViewCell.swift; path = Dashboard/FoodTableViewCell.swift; sourceTree = "<group>"; };
 		E568FD5E1BA25AB1006F6356 /* DataStoreProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataStoreProtocol.swift; path = Stores/DataStoreProtocol.swift; sourceTree = "<group>"; };
 		E568FD641BA38E4C006F6356 /* CloudKitDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CloudKitDataStore.swift; path = Stores/CloudKitDataStore.swift; sourceTree = "<group>"; };
 		E568FD661BA47F9C006F6356 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Person.swift; path = Models/Person.swift; sourceTree = "<group>"; };
@@ -322,6 +326,8 @@
 				E57E30BC1BC4CA9400CE5FBE /* MedsTableViewController.swift */,
 				E57E30BE1BC4CABE00CE5FBE /* MedsTableViewCell.swift */,
 				E52173561BC4D17B00F4E107 /* GraphsViewController.swift */,
+				E52173591BC565EE00F4E107 /* FoodTableViewController.swift */,
+				E521735B1BC5664500F4E107 /* FoodTableViewCell.swift */,
 			);
 			name = Dashboard;
 			sourceTree = "<group>";
@@ -611,9 +617,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E57E30B51BC4971400CE5FBE /* MyDataTableViewController.swift in Sources */,
+				E521735A1BC565EE00F4E107 /* FoodTableViewController.swift in Sources */,
 				E57E30B71BC4974400CE5FBE /* MyDataTableViewCell.swift in Sources */,
 				E5BB68E01B9B5FA700327253 /* LoginViewController.swift in Sources */,
 				E5EFDABE1B9CAC4A00718BDB /* DashboardViewController-Orig.swift in Sources */,
+				E521735C1BC5664500F4E107 /* FoodTableViewCell.swift in Sources */,
 				E56C6CF31BC1C0040082F81F /* Custom.swift in Sources */,
 				E52173571BC4D17B00F4E107 /* GraphsViewController.swift in Sources */,
 				E5EFDB131B9E894900718BDB /* MoreTableViewController.swift in Sources */,
