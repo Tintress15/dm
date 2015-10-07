@@ -130,16 +130,16 @@
             </objects>
             <point key="canvasLocation" x="624" y="288"/>
         </scene>
-        <!--Table View Controller-->
+        <!--My Data Table View Controller-->
         <scene sceneID="0nS-Gi-1Lw">
             <objects>
-                <tableViewController id="ika-zB-h1o" sceneMemberID="viewController">
+                <tableViewController id="ika-zB-h1o" customClass="MyDataTableViewController" customModule="dm" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="3GO-UN-CnZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="USg-wk-fuF">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyDataCellIdentifier" id="USg-wk-fuF" customClass="MyDataTableViewCell" customModule="dm" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="USg-wk-fuF" id="jCt-Fu-KQp">
@@ -158,7 +158,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q6U-MT-qHp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1046" y="288"/>
+            <point key="canvasLocation" x="1060" y="135"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="VWt-TM-7RM">
