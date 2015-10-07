@@ -249,16 +249,16 @@
             </objects>
             <point key="canvasLocation" x="1060" y="771"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Food Table View Controller-->
         <scene sceneID="ZEK-Zd-xRd">
             <objects>
-                <tableViewController id="rJA-pR-tzX" sceneMemberID="viewController">
+                <tableViewController id="rJA-pR-tzX" customClass="FoodTableViewController" customModule="dm" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="QbX-rB-Vkb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="WL6-Wu-pCv">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="WL6-Wu-pCv" customClass="FoodTableViewCell" customModule="dm" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WL6-Wu-pCv" id="dZJ-yT-1zp">
