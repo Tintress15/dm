@@ -123,23 +123,24 @@
                         <outlet property="medsButton" destination="2VF-aV-t3f" id="yvX-WQ-rwX"/>
                         <outlet property="myDataButton" destination="X6W-uY-b9U" id="7Hr-pv-9dI"/>
                         <outlet property="settingsButton" destination="CuU-gH-ANj" id="IF5-dw-0Sx"/>
+                        <segue destination="ika-zB-h1o" kind="push" identifier="MyDataIdentifier" id="Bnk-oZ-g2D"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KNf-ue-c8F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="624" y="288"/>
         </scene>
-        <!--Table View Controller-->
+        <!--My Data Table View Controller-->
         <scene sceneID="0nS-Gi-1Lw">
             <objects>
-                <tableViewController id="ika-zB-h1o" sceneMemberID="viewController">
+                <tableViewController id="ika-zB-h1o" customClass="MyDataTableViewController" customModule="dm" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="3GO-UN-CnZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="USg-wk-fuF">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyDataCellIdentifier" id="USg-wk-fuF" customClass="MyDataTableViewCell" customModule="dm" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="USg-wk-fuF" id="jCt-Fu-KQp">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -152,11 +153,12 @@
                             <outlet property="delegate" destination="ika-zB-h1o" id="SXx-OA-mD2"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="sAP-C8-Kfz"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q6U-MT-qHp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="987" y="345"/>
+            <point key="canvasLocation" x="1060" y="135"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="VWt-TM-7RM">
@@ -170,7 +172,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hY7-zx-W1E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1010" y="869"/>
+            <point key="canvasLocation" x="1046" y="918"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="u1J-QD-IXN">
@@ -181,10 +183,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="S92-wa-NCp"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r5Q-Oy-VB7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1056" y="537"/>
+            <point key="canvasLocation" x="1402" y="346"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="bZd-4g-nz4">

@@ -10,7 +10,7 @@ import UIKit
 
 class DashboardViewController: UIViewController {
     //MARK: - IBOutlets
-    
+    //FIXME: graphButton is singular, graphsButtonPressed is plural
     @IBOutlet weak var dashboardView  : UIView!
     @IBOutlet weak var myDataButton   : DMButton!
     @IBOutlet weak var logsButton     : DMButton!
@@ -18,11 +18,6 @@ class DashboardViewController: UIViewController {
     @IBOutlet weak var graphButton    : DMButton!
     @IBOutlet weak var foodButton     : DMButton!
     @IBOutlet weak var settingsButton : DMButton!
-    
-    
-    
-    
-    
     
     //MARK: - Properties
     
@@ -32,32 +27,35 @@ class DashboardViewController: UIViewController {
     
     @IBAction func myDataButtonPressed(sender: AnyObject) {
         print("myDataButtonPressed")
+        performSegueWithIdentifier("MyDataIdentifier", sender: self)
     }
     
     @IBAction func logsButtonPressed(sender: AnyObject) {
-        
+        print("logsButtonPressed")
     }
     
     @IBAction func medsButtonPressed(sender: AnyObject) {
-        
+        print("medsButtonPressed")
     }
     
     @IBAction func graphsButtonPressed(sender: AnyObject) {
-        
+        print("graphsButtonPressed")
     }
     
     @IBAction func foodButtonPressed(sender: AnyObject) {
-        
+        print("foodButtonPressed")
     }
     
     @IBAction func settingsButtonPressed(sender: AnyObject) {
-        
+        print("settingsButtonPressed")
     }
     
     
     
     //MARK: - Constraints
     func setButtonConstraints() {
+        dashboardView.frame = CGRectMake(0, 0, super.view.frame.width, super.view.frame.height)
+        
         myDataButton.snp_makeConstraints { (make) -> Void in
             make.top.equalTo(self.dashboardView.snp_top).offset(90)
             make.left.equalTo(self.dashboardView.snp_left).offset(30)
@@ -99,7 +97,6 @@ class DashboardViewController: UIViewController {
             make.height.equalTo(foodButton.snp_height)
             make.width.equalTo(foodButton.snp_width)
         }
-        
     }
     
     
@@ -110,25 +107,45 @@ class DashboardViewController: UIViewController {
     //MARK: - Internal methods
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        dashboardView.frame = CGRectMake(0, 0, super.view.frame.width, super.view.frame.height)
+        
         setButtonConstraints()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        switch segue.identifier! {
+            case "MyDataIdentifier":
+               let vc = segue.destinationViewController as! MyDataTableViewController
+//            case "LogsIdentifier":
+//                let vc = segue.destinationViewController as! LogsTableViewController
+//            case "GraphsIdentifier":
+//                let vc = segue.destinationViewController as! GraphsTableViewController
+//            case "MedsIdentifier":
+//                let vc = segue.destinationViewController as! MedsTableViewController
+//            case "FoodIdentifier":
+//                let vc = segue.destinationViewController as! FoodTableViewController
+//            case "SettingsIdentifier":
+//                let vc = segue.destinationViewController as! SettingsTableViewController
+            default:
+                print("No reason why you should wind up here.")
+        }
+        
+        
+        
+        if segue.identifier == "MyDataIdentifier" {
+            let vc = segue.destinationViewController as! MyDataTableViewController
+        }
+            
     }
-    */
+    
 
 }
