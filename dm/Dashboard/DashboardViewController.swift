@@ -42,6 +42,7 @@ class DashboardViewController: UIViewController {
     
     @IBAction func graphsButtonPressed(sender: AnyObject) {
         print("graphsButtonPressed")
+        performSegueWithIdentifier("GraphsIdentifier", sender: self)
     }
     
     @IBAction func foodButtonPressed(sender: AnyObject) {

@@ -248,10 +248,10 @@
             </objects>
             <point key="canvasLocation" x="1060" y="771"/>
         </scene>
-        <!--View Controller-->
+        <!--Graphs View Controller-->
         <scene sceneID="VWt-TM-7RM">
             <objects>
-                <viewController id="qiQ-hh-ali" sceneMemberID="viewController">
+                <viewController id="qiQ-hh-ali" customClass="GraphsViewController" customModule="dm" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KQa-1L-bXy">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
