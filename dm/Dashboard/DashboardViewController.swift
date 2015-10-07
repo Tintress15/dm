@@ -121,6 +121,25 @@ class DashboardViewController: UIViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        switch segue.identifier! {
+            case "MyDataIdentifier":
+               let vc = segue.destinationViewController as! MyDataTableViewController
+//            case "LogsIdentifier":
+//                let vc = segue.destinationViewController as! LogsTableViewController
+//            case "GraphsIdentifier":
+//                let vc = segue.destinationViewController as! GraphsTableViewController
+//            case "MedsIdentifier":
+//                let vc = segue.destinationViewController as! MedsTableViewController
+//            case "FoodIdentifier":
+//                let vc = segue.destinationViewController as! FoodTableViewController
+//            case "SettingsIdentifier":
+//                let vc = segue.destinationViewController as! SettingsTableViewController
+            default:
+                print("No reason why you should wind up here.")
+        }
+        
+        
+        
         if segue.identifier == "MyDataIdentifier" {
             let vc = segue.destinationViewController as! MyDataTableViewController
         }
