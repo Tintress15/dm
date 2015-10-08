@@ -10,6 +10,13 @@ import UIKit
 
 class GraphsViewController: UIViewController {
 
+    
+    @IBOutlet weak var barGraphButton: DMButton!
+    @IBOutlet weak var barGraph3DButton: DMButton!
+    @IBOutlet weak var scatterPlotButton: DMButton!
+    @IBOutlet weak var pieGraphButton: DMButton!
+    @IBOutlet weak var pieGraph3DButton: DMButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
