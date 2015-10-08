@@ -24,7 +24,6 @@ class DashboardViewController: UIViewController {
     
     
     //MARK: - IBActions
-    
     @IBAction func myDataButtonPressed(sender: AnyObject) {
         print("myDataButtonPressed")
         performSegueWithIdentifier("MyDataIdentifier", sender: self)
