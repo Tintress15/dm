@@ -226,7 +226,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LogIdentifier" id="HnW-gf-7dX" customClass="LogTableViewCell" customModule="dm" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HnW-gf-7dX" id="Yt1-Sn-jJL">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -264,7 +264,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FoodCellIdentifier" id="WL6-Wu-pCv" customClass="FoodTableViewCell" customModule="dm" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WL6-Wu-pCv" id="dZJ-yT-1zp">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -338,6 +338,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" id="yc4-r4-Kez">
+                                <rect key="frame" x="0.0" y="66" width="314" height="502"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.83970565029999999" green="0.83970565029999999" blue="0.83970565029999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am Graphs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kki-wb-zFz">
                                 <rect key="frame" x="58" y="109" width="113" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -400,6 +405,7 @@
                     <connections>
                         <outlet property="barGraph3DButton" destination="8G6-uw-Vlb" id="A3O-kT-Vg1"/>
                         <outlet property="barGraphButton" destination="O0U-aF-YuQ" id="ria-ZT-qUp"/>
+                        <outlet property="graphView" destination="yc4-r4-Kez" id="KqQ-Yd-mZV"/>
                         <outlet property="pieGraph3DButton" destination="nUT-62-PKy" id="WrT-kF-Y7M"/>
                         <outlet property="pieGraphButton" destination="a4b-24-hPp" id="4wT-xU-y4L"/>
                         <outlet property="scatterPlotButton" destination="viF-A0-blc" id="MMe-p9-A5l"/>
