@@ -188,7 +188,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MedsCellIdentifier" id="dER-Mg-GHs" customClass="MedsTableViewCell" customModule="dm" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dER-Mg-GHs" id="0Sv-ns-XEM">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -226,7 +226,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LogIdentifier" id="HnW-gf-7dX" customClass="LogTableViewCell" customModule="dm" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HnW-gf-7dX" id="Yt1-Sn-jJL">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -264,7 +264,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FoodCellIdentifier" id="WL6-Wu-pCv" customClass="FoodTableViewCell" customModule="dm" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WL6-Wu-pCv" id="dZJ-yT-1zp">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -349,7 +349,7 @@
                                 <rect key="frame" x="48" y="163" width="83" height="83"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Bar">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -357,7 +357,7 @@
                                 <rect key="frame" x="48" y="279" width="83" height="83"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Scatter">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -365,15 +365,7 @@
                                 <rect key="frame" x="184" y="279" width="83" height="83"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nUT-62-PKy" customClass="DMButton" customModule="dm" customModuleProvider="target">
-                                <rect key="frame" x="48" y="391" width="83" height="83"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Pie">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -381,7 +373,7 @@
                                 <rect key="frame" x="184" y="163" width="83" height="83"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="3D Bar">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -393,10 +385,25 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nUT-62-PKy" customClass="DMButton" customModule="dm" customModuleProvider="target">
+                                <rect key="frame" x="48" y="391" width="83" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="3D Pie">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="kgx-6d-pyO"/>
+                    <connections>
+                        <outlet property="barGraph3DButton" destination="8G6-uw-Vlb" id="A3O-kT-Vg1"/>
+                        <outlet property="barGraphButton" destination="O0U-aF-YuQ" id="ria-ZT-qUp"/>
+                        <outlet property="pieGraph3DButton" destination="nUT-62-PKy" id="WrT-kF-Y7M"/>
+                        <outlet property="pieGraphButton" destination="a4b-24-hPp" id="4wT-xU-y4L"/>
+                        <outlet property="scatterPlotButton" destination="viF-A0-blc" id="MMe-p9-A5l"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hY7-zx-W1E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
