@@ -60,6 +60,19 @@ class LoginViewController: UIViewController {
             make.height.equalTo(54)
         }
         
+        forgotPassword.snp_makeConstraints { (make) -> Void in
+            make.top.equalTo(bannerView.snp_bottom).offset(30)
+            make.width.equalTo(username.snp_width)
+            make.height.equalTo(loginButton.snp_height)
+            make.left.equalTo(username.snp_left)
+        }
+        
+        register.snp_makeConstraints { (make) -> Void in
+            make.top.equalTo(forgotPassword.snp_bottom).offset(6)
+            make.width.equalTo(forgotPassword.snp_width)
+            make.height.equalTo(loginButton.snp_height)
+            make.left.equalTo(forgotPassword.snp_left)
+        }
     }
     
     
