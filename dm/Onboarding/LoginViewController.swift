@@ -14,17 +14,37 @@ class LoginViewController: UIViewController {
     //MARK: - IBOutlets
     @IBOutlet weak var username       : UITextField!
     @IBOutlet weak var password       : UITextField!
-   
-    @IBOutlet weak var bannerView: UIImageView!
-    
+    @IBOutlet weak var bannerView     : UIImageView!
+    @IBOutlet weak var loginView      : UIView!
     @IBOutlet weak var loginButton    : DMButton!
     @IBOutlet weak var forgotPassword : DMButton!
     @IBOutlet weak var register       : DMButton!
-    
+
     
     //MARK: - Methods
     func setConstraints() {
-        //TODO: SnapKit
+        loginView.frame = CGRectMake(0, 0, super.view.frame.width, super.view.frame.height)
+        
+        print("w = \(super.view.frame.width)  h = \(super.view.frame.height)")
+        
+        
+        loginView.snp_makeConstraints { (make) -> Void in
+            make.height.equalTo(super.view.frame.height)
+            make.width.equalTo(super.view.frame.width)
+        }
+        
+        
+        username.snp_makeConstraints { (make) -> Void in
+            make.top.equalTo(loginView.snp_top).offset(51)
+            make.width.equalTo(204)
+            make.height.equalTo(28)
+            
+            let frameCenter   = Int(super.view.frame.width / 2.0)
+            let textBoxCenter = Int(username.frame.width / 2.0)
+            let centerVal     = CGFloat(frameCenter - textBoxCenter)
+
+            make.centerX.equalTo(centerVal)
+        }
     }
     
     
