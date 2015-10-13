@@ -28,10 +28,6 @@ class GraphsViewController: UIViewController {
             make.left.equalTo(graphView.snp_left).offset(40)
             
         }
-        
-        
-        
-        
     }
     
     
