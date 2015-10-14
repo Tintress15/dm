@@ -5,3 +5,4 @@ xcodeproj 'dm.xcodeproj'
 
 pod 'SnapKit', '~> 0.15.0'
 pod "LiquidFloatingActionButton"
+pod 'Firebase', '>= 2.4.2'
