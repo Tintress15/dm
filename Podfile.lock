@@ -1,13 +1,16 @@
 PODS:
+  - Firebase (2.4.2)
   - LiquidFloatingActionButton (0.1.1)
   - SnapKit (0.15.0)
 
 DEPENDENCIES:
+  - Firebase (>= 2.4.2)
   - LiquidFloatingActionButton
   - SnapKit (~> 0.15.0)
 
 SPEC CHECKSUMS:
+  Firebase: 5e898ed5012c81d28ca5fae1113c6b61a172bc6d
   LiquidFloatingActionButton: dcdae1e59eb07eccbf60c027001a4d6731c345c9
   SnapKit: 4962eed2ee18e48cbd2b2292fffc57efe7235f87
 
-COCOAPODS: 0.38.2
+COCOAPODS: 0.39.0
