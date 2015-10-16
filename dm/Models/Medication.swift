@@ -9,21 +9,25 @@
 import Foundation
 
 class Medication {
+    //MARK: - Properties
     private var _name         : String
     private var _dosage       : Double
     private var _uom          : String  //TODO: Make measurement type
     private var _frequency    : Int
     private var _timesPerDay  : Int     //TODO: Same as frequency?
+    //TODO: Have canned instruction strings to pick from in addition to freeform text
+    //      (i.e. Take with food, ({1,2,3} times a day), etc)
     private var _instructions : String
     
     
     //TODO: Code better initializers
     init() {
-        name         = ""
-        dosage       = ""
-        frequency    = 0
-        timesPerDay  = 0
-        instructions = ""
+        _name         = ""
+        _dosage       = 0.0
+        _frequency    = 0
+        _uom          = ""
+        _timesPerDay  = 0
+        _instructions = ""
     }
     
     
@@ -41,7 +45,7 @@ class Medication {
     }
     
     func frequency() -> Int {
-        return self._name
+        return self._frequency
     }
     
     func instructions() -> String {
