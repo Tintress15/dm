@@ -11,7 +11,7 @@ import Foundation
 class HealthProfile {
     var height : Float
     var weight : Float
-    var meds   : [Medication]   //TODO: Create meds class
+    var meds   : [Medication]
     
     
     init() {
