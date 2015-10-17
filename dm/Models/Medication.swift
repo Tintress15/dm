@@ -18,6 +18,8 @@ class Medication {
     //TODO: Have canned instruction strings to pick from in addition to freeform text
     //      (i.e. Take with food, ({1,2,3} times a day), etc)
     private var _instructions : String
+    private var _emergencyContact : String  //TODO: <--- Own model or in Person model?
+    
     
     
     //TODO: Code better initializers
@@ -30,6 +32,12 @@ class Medication {
         _instructions = ""
     }
     
+    
+    convenience init(name: String) {
+        self.init()
+        self._name = name
+        
+    }
     
     //MARK: - Getters
     func name() -> String {

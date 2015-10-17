@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		733DF9245288DA0A07A6FA61 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 320625CD4710D3E1D8AE58E6 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		E504F95D1BD2D23E0033A2E2 /* Diet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E504F95C1BD2D23E0033A2E2 /* Diet.swift */; settings = {ASSET_TAGS = (); }; };
+		E504F95F1BD2D2540033A2E2 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E504F95E1BD2D2540033A2E2 /* Recipe.swift */; settings = {ASSET_TAGS = (); }; };
 		E52173571BC4D17B00F4E107 /* GraphsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52173561BC4D17B00F4E107 /* GraphsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		E521735A1BC565EE00F4E107 /* FoodTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52173591BC565EE00F4E107 /* FoodTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		E521735C1BC5664500F4E107 /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E521735B1BC5664500F4E107 /* FoodTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
@@ -93,6 +95,8 @@
 		320625CD4710D3E1D8AE58E6 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CF103B7583E997C4BDAD6E4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B11E8C23C84350B7D75BC07D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		E504F95C1BD2D23E0033A2E2 /* Diet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Diet.swift; path = Models/Diet.swift; sourceTree = "<group>"; };
+		E504F95E1BD2D2540033A2E2 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Recipe.swift; path = Models/Recipe.swift; sourceTree = "<group>"; };
 		E52173561BC4D17B00F4E107 /* GraphsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GraphsViewController.swift; path = Dashboard/GraphsViewController.swift; sourceTree = "<group>"; };
 		E52173591BC565EE00F4E107 /* FoodTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FoodTableViewController.swift; path = Dashboard/FoodTableViewController.swift; sourceTree = "<group>"; };
 		E521735B1BC5664500F4E107 /* FoodTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FoodTableViewCell.swift; path = Dashboard/FoodTableViewCell.swift; sourceTree = "<group>"; };
@@ -290,9 +294,11 @@
 		E5BB68D91B9B57C900327253 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				E568FD661BA47F9C006F6356 /* Person.swift */,
+				E504F95C1BD2D23E0033A2E2 /* Diet.swift */,
 				E568FD681BA47FE6006F6356 /* HealthProfile.swift */,
 				E58BBA531BD0663F0026D064 /* Medication.swift */,
+				E568FD661BA47F9C006F6356 /* Person.swift */,
+				E504F95E1BD2D2540033A2E2 /* Recipe.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -637,6 +643,7 @@
 				E56C6CF31BC1C0040082F81F /* Custom.swift in Sources */,
 				E52173571BC4D17B00F4E107 /* GraphsViewController.swift in Sources */,
 				E58BBA541BD0663F0026D064 /* Medication.swift in Sources */,
+				E504F95F1BD2D2540033A2E2 /* Recipe.swift in Sources */,
 				E5EFDB131B9E894900718BDB /* MoreTableViewController.swift in Sources */,
 				E57E30B91BC4C57A00CE5FBE /* LogTableViewController.swift in Sources */,
 				E5BB68BB1B9B56FC00327253 /* ViewController.swift in Sources */,
@@ -645,6 +652,7 @@
 				E568FD651BA38E4C006F6356 /* CloudKitDataStore.swift in Sources */,
 				E568FD691BA47FE6006F6356 /* HealthProfile.swift in Sources */,
 				E5BB68E51B9B762900327253 /* Defaults.swift in Sources */,
+				E504F95D1BD2D23E0033A2E2 /* Diet.swift in Sources */,
 				E568FD6C1BA51B6F006F6356 /* DashboardViewController.swift in Sources */,
 				E5FD92CD1B9FB3090051B2C4 /* MoreViewController.swift in Sources */,
 				E5BB68B91B9B56FC00327253 /* AppDelegate.swift in Sources */,
