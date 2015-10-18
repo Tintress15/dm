@@ -24,12 +24,13 @@ class Medication {
     
     //TODO: Code better initializers
     init() {
-        _name         = ""
-        _dosage       = 0.0
-        _frequency    = 0
-        _uom          = ""
-        _timesPerDay  = 0
-        _instructions = ""
+        self._name         = ""
+        self._dosage       = 0.0
+        self._frequency    = 0
+        self._uom          = ""
+        self._timesPerDay  = 0
+        self._instructions = ""
+        self._emergencyContact = ""
     }
     
     
