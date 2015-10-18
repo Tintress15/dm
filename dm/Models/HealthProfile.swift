@@ -14,11 +14,10 @@ class HealthProfile {
     var meds   : [Medication]
     
     
+    //MARK: - Initializers
     init() {
         height = 0.0
         weight = 0.0
         meds = [Medication]()
     }
-    
-    
 }

@@ -8,16 +8,22 @@
 
 import Foundation
 
+
+//TODO: Consider subclassing CNMutableContact
 class Contact : Person {
     //MARK: - Properties
+    private var _phone              : NSDictionary //Hold different phone types
     private var _isEmergencyContact : Bool
     private var _isPhysician        : Bool
     private var _isPharmacy         : Bool
     
+    
+    //MARK: - Intializers
     override init() {
         self._isEmergencyContact = false
         self._isPhysician        = false
         self._isPharmacy         = false
+        self._phone              = NSDictionary()
         super.init()
     }
     

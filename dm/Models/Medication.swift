@@ -12,17 +12,16 @@ class Medication {
     //MARK: - Properties
     private var _name         : String
     private var _dosage       : Double
-    private var _uom          : String  //TODO: Make measurement type
+    private var _uom          : String  //TODO: Make measurement type or class?
     private var _frequency    : Int
     private var _timesPerDay  : Int     //TODO: Same as frequency?
     //TODO: Have canned instruction strings to pick from in addition to freeform text
     //      (i.e. Take with food, ({1,2,3} times a day), etc)
     private var _instructions : String
-    private var _emergencyContact : String  //TODO: <--- Own model or in Person model?
-    
     
     
     //TODO: Code better initializers
+    //MARK: - Initializers
     init() {
         self._name         = ""
         self._dosage       = 0.0
@@ -30,7 +29,6 @@ class Medication {
         self._uom          = ""
         self._timesPerDay  = 0
         self._instructions = ""
-        self._emergencyContact = ""
     }
     
     
