@@ -62,9 +62,6 @@ class Recipe {
     }
     
     
-    
-    
-    
     //MARK: - Init
     init() {
         self._category    = ""

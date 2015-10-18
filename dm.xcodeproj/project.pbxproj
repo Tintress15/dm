@@ -10,6 +10,7 @@
 		733DF9245288DA0A07A6FA61 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 320625CD4710D3E1D8AE58E6 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		E504F95D1BD2D23E0033A2E2 /* Diet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E504F95C1BD2D23E0033A2E2 /* Diet.swift */; settings = {ASSET_TAGS = (); }; };
 		E504F95F1BD2D2540033A2E2 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E504F95E1BD2D2540033A2E2 /* Recipe.swift */; settings = {ASSET_TAGS = (); }; };
+		E504F9621BD3445D0033A2E2 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = E504F9611BD3445D0033A2E2 /* Contact.swift */; settings = {ASSET_TAGS = (); }; };
 		E52173571BC4D17B00F4E107 /* GraphsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52173561BC4D17B00F4E107 /* GraphsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		E521735A1BC565EE00F4E107 /* FoodTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52173591BC565EE00F4E107 /* FoodTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		E521735C1BC5664500F4E107 /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E521735B1BC5664500F4E107 /* FoodTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
@@ -97,6 +98,7 @@
 		B11E8C23C84350B7D75BC07D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E504F95C1BD2D23E0033A2E2 /* Diet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Diet.swift; path = Models/Diet.swift; sourceTree = "<group>"; };
 		E504F95E1BD2D2540033A2E2 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Recipe.swift; path = Models/Recipe.swift; sourceTree = "<group>"; };
+		E504F9611BD3445D0033A2E2 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Contact.swift; path = Models/Contact.swift; sourceTree = "<group>"; };
 		E52173561BC4D17B00F4E107 /* GraphsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GraphsViewController.swift; path = Dashboard/GraphsViewController.swift; sourceTree = "<group>"; };
 		E52173591BC565EE00F4E107 /* FoodTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FoodTableViewController.swift; path = Dashboard/FoodTableViewController.swift; sourceTree = "<group>"; };
 		E521735B1BC5664500F4E107 /* FoodTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FoodTableViewCell.swift; path = Dashboard/FoodTableViewCell.swift; sourceTree = "<group>"; };
@@ -299,6 +301,7 @@
 				E58BBA531BD0663F0026D064 /* Medication.swift */,
 				E568FD661BA47F9C006F6356 /* Person.swift */,
 				E504F95E1BD2D2540033A2E2 /* Recipe.swift */,
+				E504F9611BD3445D0033A2E2 /* Contact.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -647,6 +650,7 @@
 				E5EFDB131B9E894900718BDB /* MoreTableViewController.swift in Sources */,
 				E57E30B91BC4C57A00CE5FBE /* LogTableViewController.swift in Sources */,
 				E5BB68BB1B9B56FC00327253 /* ViewController.swift in Sources */,
+				E504F9621BD3445D0033A2E2 /* Contact.swift in Sources */,
 				E58BBA521BCEB1180026D064 /* FirebaseDataStore.swift in Sources */,
 				E521735E1BC5682000F4E107 /* SettingsTableViewController.swift in Sources */,
 				E568FD651BA38E4C006F6356 /* CloudKitDataStore.swift in Sources */,

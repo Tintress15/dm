@@ -35,7 +35,7 @@ enum GenderType {
 }
 
 class Person {
-    private var _username    : String
+    private var _username    : String   //TODO: Not here
     private var _moniker     : String
     private var _firstName   : String?
     private var _lastName    : String?
