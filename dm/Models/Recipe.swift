@@ -17,6 +17,16 @@ class Recipe {
     private var _imageName     : String
     
     
+    //MARK: - Initializers
+    init() {
+        self._category    = ""
+        self._directions  = ""
+        self._ingredients = ""
+        self._name        = ""
+        self._imageName   = ""
+    }
+    
+    
     //MARK: - Setters
     func setCategory(category: String) {
         self._category = category
@@ -62,13 +72,6 @@ class Recipe {
     }
     
     
-    //MARK: - Init
-    init() {
-        self._category    = ""
-        self._directions  = ""
-        self._ingredients = ""
-        self._name        = ""
-        self._imageName   = ""
-    }
+
     
 }
