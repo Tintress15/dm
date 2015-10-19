@@ -10,24 +10,28 @@ import Foundation
 
 class Recipe {
     //MARK: - Properties
+    private var _name          : String
     private var _category      : String
     private var _directions    : String
     private var _ingredients   : String
-    private var _name          : String
     private var _imageName     : String
     
     
     //MARK: - Initializers
     init() {
+        self._name        = ""
         self._category    = ""
         self._directions  = ""
         self._ingredients = ""
-        self._name        = ""
         self._imageName   = ""
     }
     
     
     //MARK: - Setters
+    func setName(name: String) {
+        self._name = name
+    }
+    
     func setCategory(category: String) {
         self._category = category
     }
@@ -39,18 +43,18 @@ class Recipe {
     func setIngredients(ingredients : String) {
         self._ingredients = ingredients
     }
-    
-    func setName(name: String) {
-        self._name = name
-    }
+
     
     func setImageName(imageName: String) {
         self._imageName = imageName
     }
     
     
-    
     //MARK: - Getters
+    func name() -> String {
+        return self._name
+    }
+    
     func category() -> String {
         return self._category
     }
@@ -63,15 +67,7 @@ class Recipe {
         return self._ingredients
     }
     
-    func name() -> String {
-        return self._name
-    }
-    
     func imageName() -> String {
         return self._imageName
     }
-    
-    
-
-    
 }
