@@ -36,6 +36,7 @@
 		E504F9931BD423490033A2E2 /* 199329-200.png in Resources */ = {isa = PBXBuildFile; fileRef = E504F97A1BD423490033A2E2 /* 199329-200.png */; settings = {ASSET_TAGS = (); }; };
 		E504F9941BD423490033A2E2 /* 202105-200.png in Resources */ = {isa = PBXBuildFile; fileRef = E504F97B1BD423490033A2E2 /* 202105-200.png */; settings = {ASSET_TAGS = (); }; };
 		E504F9951BD423490033A2E2 /* 205156-200.png in Resources */ = {isa = PBXBuildFile; fileRef = E504F97C1BD423490033A2E2 /* 205156-200.png */; settings = {ASSET_TAGS = (); }; };
+		E504F9991BD596C80033A2E2 /* MedsDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E504F9981BD596C80033A2E2 /* MedsDataStore.swift */; settings = {ASSET_TAGS = (); }; };
 		E52173571BC4D17B00F4E107 /* GraphsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52173561BC4D17B00F4E107 /* GraphsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		E521735A1BC565EE00F4E107 /* FoodTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52173591BC565EE00F4E107 /* FoodTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		E521735C1BC5664500F4E107 /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E521735B1BC5664500F4E107 /* FoodTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
@@ -149,6 +150,7 @@
 		E504F97A1BD423490033A2E2 /* 199329-200.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "199329-200.png"; path = "SupportingFiles/dmicons/199329-200.png"; sourceTree = "<group>"; };
 		E504F97B1BD423490033A2E2 /* 202105-200.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "202105-200.png"; path = "SupportingFiles/dmicons/202105-200.png"; sourceTree = "<group>"; };
 		E504F97C1BD423490033A2E2 /* 205156-200.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "205156-200.png"; path = "SupportingFiles/dmicons/205156-200.png"; sourceTree = "<group>"; };
+		E504F9981BD596C80033A2E2 /* MedsDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MedsDataStore.swift; path = Stores/MedsDataStore.swift; sourceTree = "<group>"; };
 		E52173561BC4D17B00F4E107 /* GraphsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GraphsViewController.swift; path = Dashboard/GraphsViewController.swift; sourceTree = "<group>"; };
 		E52173591BC565EE00F4E107 /* FoodTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FoodTableViewController.swift; path = Dashboard/FoodTableViewController.swift; sourceTree = "<group>"; };
 		E521735B1BC5664500F4E107 /* FoodTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FoodTableViewCell.swift; path = Dashboard/FoodTableViewCell.swift; sourceTree = "<group>"; };
@@ -372,6 +374,7 @@
 				E568FD5E1BA25AB1006F6356 /* DataStoreProtocol.swift */,
 				E568FD641BA38E4C006F6356 /* CloudKitDataStore.swift */,
 				E58BBA511BCEB1180026D064 /* FirebaseDataStore.swift */,
+				E504F9981BD596C80033A2E2 /* MedsDataStore.swift */,
 			);
 			name = Stores;
 			sourceTree = "<group>";
@@ -775,6 +778,7 @@
 				E57E30BF1BC4CABE00CE5FBE /* MedsTableViewCell.swift in Sources */,
 				E5EFDB151B9E8A1900718BDB /* MoreTableViewCell.swift in Sources */,
 				E57E30BB1BC4C59A00CE5FBE /* LogTableViewCell.swift in Sources */,
+				E504F9991BD596C80033A2E2 /* MedsDataStore.swift in Sources */,
 				E5BB68E31B9B6A8200327253 /* Navigation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
