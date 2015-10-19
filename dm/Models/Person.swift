@@ -35,7 +35,6 @@ enum GenderType {
 }
 
 class Person {
-    private var _username    : String   //TODO: Not here
     private var _moniker     : String
     private var _firstName   : String?
     private var _lastName    : String?
@@ -44,17 +43,18 @@ class Person {
     
     //MARK: - Init
     init() {
-        _username   = ""
-        _moniker    = ""
-        _birthDate  = NSDate()
-        _gender     = .Undeclared
+        _moniker   = ""
+        _birthDate = NSDate()
+        _gender    = .Undeclared
+    }
+    
+    convenience init(firstName: String, lastName: String) {
+        self.init()
+        self._firstName = firstName
+        self._lastName  = lastName
     }
         
     //MARK: - Getters
-    func getUserName() -> String {
-        return self._username
-    }
-    
     func getMoniker() -> String {
         return self._moniker
     }
@@ -86,10 +86,6 @@ class Person {
     
     
     //MARK: - Setters
-    func setUserName(username: String) {
-        self._username = username
-    }
-    
     func setMoniker(moniker: String) {
         self._moniker = moniker
     }
