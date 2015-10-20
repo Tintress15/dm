@@ -16,4 +16,38 @@ class MedicationsDataStore {
         }
         return Static.instance;
     }
+    
+    //MARK: - CRUD
+    //TODO: CRUD is stubbed in.  Correct function signatures
+    func create(data: String) {
+        
+    }
+    
+    func read() -> String {
+        var ret : String = ""
+        ret = "nothing"
+        
+        return ret  // Will return Medication instance
+        
+        /*
+        var myRootRef = Firebase(url:"https://docs-examples.firebaseio.com/web/data")
+        myRootRef.childByAppendingPath("users/mchen/name")
+        */
+        
+    }
+    
+    func update() {
+        
+    }
+    
+    func delete() {
+        
+    }
+    
+    
+    
+    
+    
+    
+    
 }
