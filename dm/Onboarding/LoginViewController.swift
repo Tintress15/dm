@@ -18,7 +18,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var loginView      : UIView!
     @IBOutlet weak var loginButton    : DMButton!
     @IBOutlet weak var forgotPassword : DMButton!
-    @IBOutlet weak var register       : DMButton!
+    @IBOutlet weak var registerButton : DMButton!
+
 
     
     //MARK: - Methods
@@ -60,87 +61,37 @@ class LoginViewController: UIViewController {
             make.height.equalTo(54)
         }
         
-        forgotPassword.snp_makeConstraints { (make) -> Void in
+        registerButton.snp_makeConstraints { (make) -> Void in
             make.top.equalTo(bannerView.snp_bottom).offset(30)
             make.width.equalTo(username.snp_width)
             make.height.equalTo(loginButton.snp_height)
             make.left.equalTo(username.snp_left)
         }
         
-        register.snp_makeConstraints { (make) -> Void in
-            make.top.equalTo(forgotPassword.snp_bottom).offset(6)
-            make.width.equalTo(forgotPassword.snp_width)
+        forgotPassword.snp_makeConstraints { (make) -> Void in
+            make.top.equalTo(registerButton.snp_bottom).offset(6)
+            make.width.equalTo(registerButton.snp_width)
             make.height.equalTo(loginButton.snp_height)
-            make.left.equalTo(forgotPassword.snp_left)
+            make.left.equalTo(registerButton.snp_left)
         }
     }
-    
-    
-    
-    
-    
-    
-//    func setConstraints() {
-//        loginView.frame = CGRectMake(0, 0, super.view.frame.width, super.view.frame.height)
-//        
-//        print("w = \(super.view.frame.width)  h = \(super.view.frame.height)")
-//        
-//        
-//        loginView.snp_remakeConstraints { (make) -> Void in
-//            make.height.equalTo(super.view.frame.height)
-//            make.width.equalTo(super.view.frame.width)
-//        }
-//
-//        username.snp_makeConstraints { (make) -> Void in
-//            make.top.equalTo(loginView.snp_top).offset(51)
-//            make.width.equalTo(204)
-//            make.height.equalTo(28)
-//            
-//            //TODO: Make a resubale method for this...center(a, b) -> cVal
-//            let frameCenter   = Int(super.view.frame.width / 2.0)
-//            let textBoxCenter = Int(username.frame.width / 2.0)
-//            let centerVal     = CGFloat(frameCenter - textBoxCenter)
-//
-//            print("fc = \(frameCenter)  tbc = \(textBoxCenter)  cv = \(centerVal)")
-//            
-//            make.left.equalTo(centerVal)
-//        }
-//        
-//        password.snp_makeConstraints { (make) -> Void in
-//            make.top.equalTo(username.snp_bottom).offset(6)
-//            make.width.equalTo(204)
-//            make.height.equalTo(28)
-//            
-//            
-//            //TODO: Make a resubale method for this...center(a, b) -> cVal
-//            let frameCenter   = Int(super.view.frame.width / 2.0)
-//            let textBoxCenter = Int(password.frame.width / 2.0)
-//            let centerVal     = CGFloat(frameCenter - textBoxCenter)
-//            
-//            make.left.equalTo(loginButton.snp_left)
-//        }
-//        
-//        loginButton.snp_makeConstraints { (make) -> Void in
-//            make.top.equalTo(password.snp_bottom).offset(20)
-//            make.width.equalTo(204)
-//            make.height.equalTo(28)
-//            
-//            //TODO: Make a resubale method for this...center(a, b) -> cVal
-//            let frameCenter   = Int(super.view.frame.width / 2.0)
-//            let textBoxCenter = Int(loginButton.frame.width / 2.0)
-//            let centerVal     = CGFloat(frameCenter - textBoxCenter)
-//            
-//            make.left.equalTo(centerVal)
-//        }
-//        
-//        
-//    }
+
     
     
     //MARK: - IBActions
     @IBAction func loginButtonPressed(sender: AnyObject) {
-        performExoSegueWithIdentifier("Dashboard", viewController: "DashboardIdentifier")
+        if !validUsername(self.username.text!) {
+            dmAlert("Invalud Username", message: "Username must be at least 3 characters", buttonTitle: "OK")
+        }
+        
+        
+        //performExoSegueWithIdentifier("Dashboard", viewController: "DashboardIdentifier")
     }
+    
+    @IBAction func registerButtonPressed(sender: AnyObject) {
+        performSegueWithIdentifier("LoginToRegisterIdentifier", sender: self)
+    }
+    
     
     //MARK: - Internal methods
     override func viewWillAppear(animated: Bool) {
@@ -164,12 +115,14 @@ class LoginViewController: UIViewController {
 
     //MARK: - Navigation
 
-    /*
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "LoginToRegisterIdentifier" {
+            print("LoginToRegisterIdentifier")
+        }
+        
     }
-    */
+    
 
 }

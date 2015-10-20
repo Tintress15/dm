@@ -81,7 +81,7 @@
                                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9pt-ny-btq" customClass="DMButton" customModule="dm" customModuleProvider="target">
-                                        <rect key="frame" x="111" y="290" width="99" height="30"/>
+                                        <rect key="frame" x="111" y="288" width="99" height="33"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <animations/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -89,6 +89,9 @@
                                         <state key="normal" title="Sign up">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="registerButtonPressed:" destination="yfo-kx-DGp" eventType="touchUpInside" id="y5O-OJ-5qG"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <animations/>
@@ -105,13 +108,59 @@
                         <outlet property="loginButton" destination="Czg-BH-cHK" id="8HG-US-KMl"/>
                         <outlet property="loginView" destination="3xy-Gi-EHa" id="Bwl-Tn-t3s"/>
                         <outlet property="password" destination="Nge-Ch-gvb" id="j3U-YH-okt"/>
-                        <outlet property="register" destination="9pt-ny-btq" id="Lxy-H2-HMi"/>
+                        <outlet property="registerButton" destination="9pt-ny-btq" id="MuF-dF-Abk"/>
                         <outlet property="username" destination="6gF-AD-lib" id="iJr-c7-qrj"/>
+                        <segue destination="tYl-wl-0Iq" kind="modal" identifier="LoginToRegisterIdentifier" id="8oj-yI-8AR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R6m-Gz-fja" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-126" y="149"/>
+        </scene>
+        <!--Registration View Controller-->
+        <scene sceneID="aXc-tl-MaY">
+            <objects>
+                <viewController id="tYl-wl-0Iq" customClass="RegistrationViewController" customModule="dm" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LBM-I7-bDv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="username" textAlignment="center" minimumFontSize="17" id="pYv-JB-5XQ" customClass="DMTextField" customModule="dm" customModuleProvider="target">
+                                <rect key="frame" x="58" y="49" width="204" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="password" textAlignment="center" minimumFontSize="17" id="npx-VZ-tOn" customClass="DMTextField" customModule="dm" customModuleProvider="target">
+                                <rect key="frame" x="58" y="85" width="204" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jph-JP-UmW" customClass="DMButton" customModule="dm" customModuleProvider="target">
+                                <rect key="frame" x="58" y="142" width="204" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <state key="normal" title="Register"/>
+                                <connections>
+                                    <action selector="registerButtonPressed:" destination="tYl-wl-0Iq" eventType="touchUpInside" id="MR6-bR-6rJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="password" destination="npx-VZ-tOn" id="uCg-hV-TEb"/>
+                        <outlet property="registerButton" destination="jph-JP-UmW" id="6W0-1C-Ow8"/>
+                        <outlet property="username" destination="pYv-JB-5XQ" id="MXL-es-fDv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AvH-wk-06t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="332" y="149"/>
         </scene>
     </scenes>
 </document>

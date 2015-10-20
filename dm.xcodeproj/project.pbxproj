@@ -37,6 +37,9 @@
 		E504F9941BD423490033A2E2 /* 202105-200.png in Resources */ = {isa = PBXBuildFile; fileRef = E504F97B1BD423490033A2E2 /* 202105-200.png */; settings = {ASSET_TAGS = (); }; };
 		E504F9951BD423490033A2E2 /* 205156-200.png in Resources */ = {isa = PBXBuildFile; fileRef = E504F97C1BD423490033A2E2 /* 205156-200.png */; settings = {ASSET_TAGS = (); }; };
 		E504F9991BD596C80033A2E2 /* MedsDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E504F9981BD596C80033A2E2 /* MedsDataStore.swift */; settings = {ASSET_TAGS = (); }; };
+		E504F99D1BD6A6B20033A2E2 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E504F99C1BD6A6B20033A2E2 /* Validation.swift */; settings = {ASSET_TAGS = (); }; };
+		E504F9A01BD6A9910033A2E2 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E504F99F1BD6A9910033A2E2 /* Utils.swift */; settings = {ASSET_TAGS = (); }; };
+		E504F9A21BD6AC540033A2E2 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E504F9A11BD6AC540033A2E2 /* RegistrationViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		E52173571BC4D17B00F4E107 /* GraphsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52173561BC4D17B00F4E107 /* GraphsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		E521735A1BC565EE00F4E107 /* FoodTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52173591BC565EE00F4E107 /* FoodTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		E521735C1BC5664500F4E107 /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E521735B1BC5664500F4E107 /* FoodTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
@@ -151,6 +154,9 @@
 		E504F97B1BD423490033A2E2 /* 202105-200.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "202105-200.png"; path = "SupportingFiles/dmicons/202105-200.png"; sourceTree = "<group>"; };
 		E504F97C1BD423490033A2E2 /* 205156-200.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "205156-200.png"; path = "SupportingFiles/dmicons/205156-200.png"; sourceTree = "<group>"; };
 		E504F9981BD596C80033A2E2 /* MedsDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MedsDataStore.swift; path = Stores/MedsDataStore.swift; sourceTree = "<group>"; };
+		E504F99C1BD6A6B20033A2E2 /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Util/Validation.swift; sourceTree = "<group>"; };
+		E504F99F1BD6A9910033A2E2 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Util/Utils.swift; sourceTree = "<group>"; };
+		E504F9A11BD6AC540033A2E2 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegistrationViewController.swift; path = Onboarding/RegistrationViewController.swift; sourceTree = "<group>"; };
 		E52173561BC4D17B00F4E107 /* GraphsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GraphsViewController.swift; path = Dashboard/GraphsViewController.swift; sourceTree = "<group>"; };
 		E52173591BC565EE00F4E107 /* FoodTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FoodTableViewController.swift; path = Dashboard/FoodTableViewController.swift; sourceTree = "<group>"; };
 		E521735B1BC5664500F4E107 /* FoodTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FoodTableViewCell.swift; path = Dashboard/FoodTableViewCell.swift; sourceTree = "<group>"; };
@@ -397,6 +403,8 @@
 			children = (
 				E5BB68E21B9B6A8200327253 /* Navigation.swift */,
 				E5BB68E41B9B762900327253 /* Defaults.swift */,
+				E504F99C1BD6A6B20033A2E2 /* Validation.swift */,
+				E504F99F1BD6A9910033A2E2 /* Utils.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -413,6 +421,7 @@
 			isa = PBXGroup;
 			children = (
 				E5BB68DD1B9B594000327253 /* Onboarding.storyboard */,
+				E504F9A11BD6AC540033A2E2 /* RegistrationViewController.swift */,
 				E5BB68DF1B9B5FA700327253 /* LoginViewController.swift */,
 			);
 			name = Onboarding;
@@ -752,15 +761,18 @@
 				E521735A1BC565EE00F4E107 /* FoodTableViewController.swift in Sources */,
 				E57E30B71BC4974400CE5FBE /* MyDataTableViewCell.swift in Sources */,
 				E5BB68E01B9B5FA700327253 /* LoginViewController.swift in Sources */,
+				E504F9A21BD6AC540033A2E2 /* RegistrationViewController.swift in Sources */,
 				E5EFDABE1B9CAC4A00718BDB /* DashboardViewController-Orig.swift in Sources */,
 				E521735C1BC5664500F4E107 /* FoodTableViewCell.swift in Sources */,
 				E56C6CF31BC1C0040082F81F /* Custom.swift in Sources */,
 				E52173571BC4D17B00F4E107 /* GraphsViewController.swift in Sources */,
 				E58BBA541BD0663F0026D064 /* Medication.swift in Sources */,
+				E504F9A01BD6A9910033A2E2 /* Utils.swift in Sources */,
 				E504F95F1BD2D2540033A2E2 /* Recipe.swift in Sources */,
 				E5EFDB131B9E894900718BDB /* MoreTableViewController.swift in Sources */,
 				E57E30B91BC4C57A00CE5FBE /* LogTableViewController.swift in Sources */,
 				E5BB68BB1B9B56FC00327253 /* ViewController.swift in Sources */,
+				E504F99D1BD6A6B20033A2E2 /* Validation.swift in Sources */,
 				E504F9621BD3445D0033A2E2 /* Contact.swift in Sources */,
 				E58BBA521BCEB1180026D064 /* FirebaseDataStore.swift in Sources */,
 				E521735E1BC5682000F4E107 /* SettingsTableViewController.swift in Sources */,
