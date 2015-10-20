@@ -16,6 +16,8 @@ let dmBlue  = UIColor(red: 21.0/255.0, green: 43.0/255.0, blue: 72.0/255.0, alph
 let SHORT   = "Short"
 let LONG    = "Long"
 
+let minUsernameLength = 3
+let minPasswordLength = 5
 
 class DMButton : UIButton {
     required init?(coder aDecoder: NSCoder) {

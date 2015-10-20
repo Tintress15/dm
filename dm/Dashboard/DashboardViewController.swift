@@ -24,7 +24,6 @@ class DashboardViewController: UIViewController {
     
     
     //MARK: - IBActions
-    
     @IBAction func myDataButtonPressed(sender: AnyObject) {
         print("myDataButtonPressed")
         performSegueWithIdentifier("MyDataIdentifier", sender: self)
@@ -47,10 +46,12 @@ class DashboardViewController: UIViewController {
     
     @IBAction func foodButtonPressed(sender: AnyObject) {
         print("foodButtonPressed")
+        performSegueWithIdentifier("FoodIdentifier", sender: self)
     }
     
     @IBAction func settingsButtonPressed(sender: AnyObject) {
         print("settingsButtonPressed")
+        performSegueWithIdentifier("SettingsIdentifier", sender: self)
     }
     
     
@@ -134,10 +135,10 @@ class DashboardViewController: UIViewController {
                 let vc = segue.destinationViewController as! GraphsViewController
             case "MedsIdentifier":
                 let vc = segue.destinationViewController as! MedsTableViewController
-//            case "FoodIdentifier":
-//                let vc = segue.destinationViewController as! FoodTableViewController
-//            case "SettingsIdentifier":
-//                let vc = segue.destinationViewController as! SettingsTableViewController
+            case "FoodIdentifier":
+                let vc = segue.destinationViewController as! FoodTableViewController
+            case "SettingsIdentifier":
+                let vc = segue.destinationViewController as! SettingsTableViewController
             default:
                 print("No reason why you should wind up here.")
         }
